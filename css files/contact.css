@@ -1,0 +1,40 @@
+.container{
+    display: block;
+    width: 15vw;
+    height: 20vh;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.circular{
+    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+    border: 1px #fff solid;
+    outline: none;
+    margin-left: 37%;
+}
+.container h3{
+    color: #58b908;
+    font-size:medium;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+
+.bottom{
+    display: flex;
+    width: 150vw;
+    margin-left: 15vw;
+    margin-top: 10vh;
+}
+.foot{
+    margin-top: 3vh;
+    background-color: rgb(28, 42, 51);
+    width: 90%;
+    height: 80px;
+    border: #fff 1px solid;
+    outline: none;
+    margin-left: 5%;
+}

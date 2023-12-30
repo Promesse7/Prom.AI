@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+background: url(/Photos-001/index-background.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+/* topbar starts here */
+
+nav.topbar{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    justify-content: space-around;
+}
+.topbar h1{
+    font-size: 15px;
+    font-weight: 100;
+}
+.top1{
+    display: flex;
+    margin-left: 20vw;
+    margin-right: 15vw;
+}
+.top1 h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.top6{
+    margin-right: 20vw;
+}
+
+
+/* topbar ends here */
+
+
+
+
+/* middle-container starts here */
+.middle-container{
+    margin: 15vh 5vw 5vh 5vw;
+    width: 60vw;
+    display: flex;
+
+}
+.description{
+    color: #fff;
+   padding-top: 10vh;
+}
+
+.landing{
+    color: #58b908;
+    font-family:Cambria, Cochin, Georgia, Times, serif;
+    font-weight: lighter;
+ padding-left: 5vw;
+}
+
+.AI{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+.boxes{
+ margin-right: 11vw;
+}
+.windows{
+
+  border-right: 0;
+  margin-top: 10vh;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: lighter;
+  width: 12vw;
+  color: #58b908;
+}
+
+button{
+    width: 10vw;
+    height: 6vh;
+    text-align: center;
+    color: black;
+    background-color: #58b908;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+}
+
+b{
+    font-size: 25px;
+    font-weight: lighter;
+  color: rgb(119, 115, 115);
+}
+
+/* middle-container ends here */
