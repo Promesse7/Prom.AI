@@ -6,9 +6,11 @@ body{
 }
 a{
     
-color: #fff;
-text-decoration-line: none;
-
+    color: #fff;
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-color: none;
+    cursor: pointer;
 }
 .title{
     color: #58b908 ;

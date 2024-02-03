@@ -20,7 +20,8 @@ background-attachment: fixed;
 /* topbar starts here */
 a{
     text-decoration: none;
-    color: #fff;
+    text-decoration-color: none;
+    cursor: pointer;
 }
 nav.topbar{
     /* margin-top: 0.5%; */

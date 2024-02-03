@@ -14,6 +14,11 @@ body{
     display: flex;
     margin: 4% 2%;
 }
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    cursor: pointer;
+}
 
 .form-container{
     color: #fff;

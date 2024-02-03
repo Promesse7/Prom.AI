@@ -23,6 +23,11 @@
      margin-bottom: 10px;
 }
 
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    cursor: pointer;
+}
 .bottom{
     display: flex;
     width: 150vw;

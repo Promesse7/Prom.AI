@@ -20,6 +20,11 @@ nav.topbar{
     color: #fff;
     justify-content: space-around;
 }
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    cursor: pointer;
+}
 .topbar h1{
     font-size: 15px;
     font-weight: 100;
