@@ -12,6 +12,9 @@ background-repeat: no-repeat;
 
 /* topbar starts here */
 
+nav.topbar a{
+    color: #fff;
+}
 nav.topbar{
     margin-top: 2%;
     display: flex;
@@ -22,7 +25,7 @@ nav.topbar{
 }
 a{
     text-decoration: none;
-    text-decoration-color:  #fff;
+    text-decoration-color:  none;
     cursor: pointer;
 }
 .topbar h1{
