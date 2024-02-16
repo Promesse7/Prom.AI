@@ -62,5 +62,28 @@
                     </div>                
         </div>
     </nav>
+
+        <!------------------ spiner *start* -------------->
+
+
+
+
+<div class="loader"></div>
+<script>
+  window.addEventListener("load", ()=>{
+    const loader =document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+        loader.addEventListener("transtionend",()=>{
+            document.body.removeChild("loader")
+        })
+    
+   
+})
+</script>
+
+
+
+<!------------------ spiner *end* -------------->
 </body>
 </html>
