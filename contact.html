@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css files/home.css">
+    <link rel="stylesheet" href="css files/spinner.css">
     <link rel="stylesheet" href="./css files/services.css">
     <link rel="stylesheet" href="./css files/contact.css">
     <link rel="icon" href="./Photos-001/AI photos/icon.jpg">
@@ -117,5 +118,27 @@
    <div class="foot">
 
    </div>
+     <!------------------ spiner *start* -------------->
+
+
+
+
+<div class="loader"></div>
+<script>
+  window.addEventListener("load", ()=>{
+    const loader =document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+        loader.addEventListener("transtionend",()=>{
+            document.body.removeChild("loader")
+        })
+    
+   
+})
+</script>
+
+
+
+<!------------------ spiner *end* -------------->
 </body>
 </html>
