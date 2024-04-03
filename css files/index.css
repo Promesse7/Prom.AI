@@ -11,40 +11,51 @@ background-repeat: no-repeat;
 
 
 /* topbar starts here */
-
-nav.topbar a{
-    color: #fff;
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    cursor: pointer;
 }
 nav.topbar{
-    margin-top: 2%;
     display: flex;
     align-items: center;
     text-align: center;
     color: #fff;
     justify-content: space-around;
-}
-a{
-    text-decoration: none;
-    text-decoration-color:  none;
-    cursor: pointer;
+    background-color:rgb(14, 19, 32) ;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 .topbar h1{
     font-size: 15px;
     font-weight: 100;
+    cursor: pointer;
 }
+
+/* .topbar h1{
+
+} */
 .top1{
     display: flex;
-    margin-left: 20vw;
+    margin-left: 2vw;
     margin-right: 15vw;
 }
 .top1 h1{
     font-size: 25px;
     font-weight: 500;
 }
-.top6{
-    margin-right: 20vw;
+.top7{
+    margin-right: 19vw;
 }
-
+.top8 button{
+    border: #58b908 1px solid;
+    outline: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    color: #fff;
+    background-color: transparent;
+}
 
 /* topbar ends here */
 
@@ -90,7 +101,7 @@ a{
   color: #58b908;
 }
 
-button{
+.button{
     width: 10vw;
     height: 6vh;
     text-align: center;
