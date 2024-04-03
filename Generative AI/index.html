@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css files/spinner.css">
+    <link rel="icon" href="/Photos-001/AI photos/icon.jpg">
     <title>Generate</title>
 </head>
 <body>
@@ -160,6 +162,27 @@
           }
       }
           </script>
+         <!------------------ spiner *start* -------------->
+
+
+
+
+<div class="loader"></div>
+<script>
+  window.addEventListener("load", ()=>{
+    const loader =document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+        loader.addEventListener("transtionend",()=>{
+            document.body.removeChild("loader")
+        })
+    
    
+})
+</script>
+
+
+
+<!------------------ spiner *end* -------------->
 </body>
 </html>
