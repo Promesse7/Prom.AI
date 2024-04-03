@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Generate</title>
+</head>
+<body>
+    <section class="container">
+        <nav class="first_nav">
+            <div class="icon_st">
+              <img src="./images/logo.png" alt="my gigantic logo">
+            </div>
+            <hr class="sep">
+            <div class="icon_th">
+             <a href="#">
+    <span class="icon now"><img src="./images/icons/sliders.svg" style="transform: rotate(90deg); filter: invert(31%) sepia(19%) saturate(2994%) hue-rotate(54deg) brightness(129%) contrast(103%);" alt=""></span>
+             </a>
+            </div>
+            <div class="icon_th">
+              <a href="#">
+                <span class="icon"><img src="./images/icons/cpu.svg" alt=""> </span>
+              </a>
+            </div>
+            <div class="icon_th">
+             <a href="#"> 
+              <span class="icon"> <img src="./images/icons/award.svg" alt=""></span>
+             </a>
+            </div>
+            <div class="icon_th">
+             <a href="#">
+              <span><img src="./images/icons/message-square.svg" alt=""></span>
+             </a>
+            </div>
+            <div class="icon_th">
+              <a href="#">
+                <span><img src="./images/icons/star.svg" alt=""></span>
+              </a>
+            </div>
+            <div class="icon_th">
+              <a href="#">
+           <span><img src="./images/icons/settings.svg" alt=""> </span>
+              </a>
+            </div>  
+            <div class="icon_th">
+              <a href="#">
+           <span><img src="./images/icons/help-circle.svg" alt=""> </span>
+              </a>
+            </div> 
+          </nav>
+      
+          <nav class="second_nav">
+              <div class="directive_search">
+                <span class="send"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span>
+                  <input type="text" name="search" id="search" placeholder="Search here">
+              </div>
+              <div class="directive">
+              <a href="./ask.html" class="dir">Ask Anything</a> 
+              </div>
+              <div class="directive">
+                <a href="" class="dir">Image Generator</a> 
+              </div>
+              <div class="directive">
+                    <a href="" class="dir">Content Writer</a> 
+              </div>
+              <div class="directive">
+                <a href="" class="dir">Code Generator</a> 
+              </div>
+              <div class="directive">
+                  <a href="" class="dir">Translate Anything</a> 
+              </div>
+              <div class="directive">
+                      <a href="" class="dir">Socail Media</a> 
+              </div>
+              <div class="directive">
+                <a href="" class="dir">Email Generator</a> 
+                </div>
+                <div class="directive">
+                  <a href="" class="dir">Personal Advice</a> 
+                </div>
+                <div class="directive">
+                      <a href="" class="dir">Password Generator</a> 
+                </div>
+                <div class="directive">
+                  <a href="" class="dir">Plot Generator</a> 
+                </div>
+                <div class="directive">
+                    <a href="" class="dir">Essay Writer</a> 
+                </div>
+                <div class="directive">
+                    <a href="" class="dir">Story Writer</a> 
+                </div>
+                <div class="directive">
+                    <a href="" class="dir">Article Writer</a> 
+                </div>
+                <div class="directive">
+                    <a href="" class="dir"> Paraphraser</a> 
+                </div>
+                <div class="directive">
+                    <a href="" class="dir">Report Generator</a> 
+                </div>
+
+          </nav>
+          <nav class="main_view">
+            <div class="top-description">
+                <p class="text"><em>Welcome! You can now generate everything you want.</em></p>
+                <div class="bttn">
+                  <img src="./images/icons/address-book.svg" alt="">
+                </div>
+                <div class="btn">
+                    <p class="btn-text"><img src="./images/icons/award.svg" alt="Premium"> Get Premium</p>
+                </div>
+            </div> <hr class="separator">
+            <nav class="response-container">
+              <div class="icon-bot">
+                    <img src="./images/logo.png" alt="my gigantic logo">
+               </div>
+               <div class="response" id="answer"></div>
+            </nav>
+    
+  
+    <div class="container">
+      <input type="text" placeholder="Ask Anything here..." id="queryInput">
+      <div class="span-container">
+        <button class="butn" id="btn">Ask</button> 
+        <button class="send-question"><embed src="./images/icons/link-2.svg" alt=""></button>
+        <button class="upload"><embed src="./images/icons/image.svg" alt=""></button>
+        <button class="record"><embed src="./images/icons/mic.svg" alt=""></button>
+      </div>
+  </div>
+          </nav>
+    </section>
+    <script>
+      var i= 0;
+      var speed= 100;
+      var answer ='';
+      var answerLength;
+      document.addEventListener('click',function(e){
+          if (e.target.id =='btn') {
+              document.getElementById('answer').style.display = 'block';
+              let question = document.getElementById('queryInput').value;
+              answer = 'I cannot understand your question.';
+              if (question.length) {
+                  answer = "VS Code uses TypeScript type declaration (typings) files (for example node.d.ts) to provide metadata to VS Code about the JavaScript based frameworks you are consuming in your application. Type declaration files are written in TypeScript so they can express the data types of parameters and functions, allowing VS Code to provide a rich IntelliSense experience. Thanks to a feature called Automatic Type Acquisition, you do not have to worry about downloading these type declaration files, VS Code will install them automatically for you"
+              }
+              answerLength = answer.length;
+              typing();
+          }
+      });
+      function typing(){
+      if(i < answerLength){
+          answerEl= document.getElementById('answer');
+          answerEl.innerHTML += answer[i] + '|';
+          i++;
+          setTimeout(() => {
+              answerEl.innerHTML = answerEl.innerHTML.substring(0,answerEl.innerHTML.length-1);
+          }, 50);
+          setTimeout(typing, speed);
+          }
+      }
+          </script>
+   
+</body>
+</html>
