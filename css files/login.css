@@ -12,7 +12,7 @@ body{
 .name{
     color: #fff;
     display: flex;
-    margin: 2% 2%;
+    margin: 1% 1%;
 }
 a{
     text-decoration: none;
@@ -124,9 +124,10 @@ hr{
 }
 
 .with:hover{
-    background-color: #377a00;
-    border:0.5px #fff solid;
+    background-color: #58b908;
+    border:0px #fff solid;
     color: black;
+    height: 7vh;
 }
 
 

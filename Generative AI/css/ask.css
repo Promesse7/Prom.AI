@@ -24,12 +24,11 @@ nav.first_nav{
     padding: 2px;
     padding-top: 6px;
     margin-bottom: 2px;
-}
-.icon_st img{
     margin-top: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-image: url(../images/logo.png);
 }
 .icon_th{
     margin-bottom: 10px;
