@@ -29,7 +29,7 @@
         </div>
         <h5 style="float: right; margin: 5px 2px;"><a href="/#">Forgot Password?</a></h5>
 
-        <button class="button" type="button">Log me in</button>
+        <button class="button" type="button" onclick="login()">Log me in</button>
         <p class="emp">
             Don't you have an account? <em>Sign up</em>
         </p>
@@ -112,11 +112,7 @@
             if (user.email==email && user.password==password) {
                alert("Login Successful") 
                loginSuccessful=true
-               
-               setTimeout(() => {
-                popup.classList.add('open-popup')
-            }, 200);
-            
+                window.open("Generative AI/index.html");
             }
         })
         
