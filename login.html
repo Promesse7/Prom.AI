@@ -10,22 +10,22 @@
 </head>
 <body>
     <div class="name">
-        <H1>Prom</H1><H1 style="color: #58b908;">AI</H1>
+      <a href="./index.html"><H1>Prom</H1><H1 style="color: #58b908;">AI</H1></a>  
     </div>
     <section class="form-container">
         <p class="Welcome">Welcome to Prom.AI !</p>
         <div class="hh3">
      <h3 style="color: #58b908;
      border-bottom: #58b908 1px solid; padding: 0 50px;">Login</h3>
-     <h3 style="padding-left: 0 20px;">Sign Up</h3>
+     <a href="#"><h3 style="padding-left: 0 20px;">Sign Up</h3></a>
         </div>
         <div >
             <h4>Email Id</h4>
-            <input  placeholder="name@host.com" autocomplete="username"  required="" aria-required="true"  value="" type="email" name="Enter your mail id" >
+            <input  placeholder="name@host.com" autocomplete="username" id="emailInput"  required aria-required="true"  value="" type="email" placeholder="Enter your mail id" >
         </div>
         <div>
             <h4>Password</h4>
-            <input  placeholder="Password" autocomplete="userpassword"  required="" aria-required="true"  value="" type="password" name="enter your password" >
+            <input  placeholder="Password" autocomplete="userpassword" id="passwordInput" required aria-required="true"  value="" type="password" name="enter your password" >
         </div>
         <h5 style="float: right; margin: 5px 2px;"><a href="/#">Forgot Password?</a></h5>
 
@@ -92,5 +92,39 @@
 
 
 <!------------------ spiner *end* -------------->
+
+<script>
+       
+    let user=[
+        {email:"promesserukundo@gmail.com", password:"prom123"},
+        {email:"mfitep6@gmail.com", password:"mp123"},
+        {email:"israelniy32@gmail.com", password:"niyigena3211"}
+    ]
+    
+    const emailInput=document.getElementById("emailInput")
+    const passwordInput=document.getElementById("passwordInput")
+    
+    function login() {
+        const email=emailInput.value;
+        const password=passwordInput.value;
+        let loginSuccessful=false
+        user.forEach((user)=>{
+            if (user.email==email && user.password==password) {
+               alert("Login Successful") 
+               loginSuccessful=true
+               
+               setTimeout(() => {
+                popup.classList.add('open-popup')
+            }, 200);
+            
+            }
+        })
+        
+        if (!loginSuccessful) {
+            alert("User inputs not registered")   
+        }
+        
+    }
+        </script>
 </body>
 </html>
