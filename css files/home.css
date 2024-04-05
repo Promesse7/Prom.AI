@@ -46,6 +46,7 @@ nav.topbar{
     display: flex;
     margin-left: 2vw;
     margin-right: 15vw;
+    width: 60px;
 }
 .top1 h1{
     font-size: 25px;
