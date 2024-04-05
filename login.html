@@ -109,19 +109,19 @@
         const email=emailInput.value;
         const password=passwordInput.value;
         let loginSuccessful=false
-        user.forEach((user)=>{
-            inputField.addEventListener("keypress", function(event) {
-                if (event.key === "Enter"){
-                    alert("Login Successful") 
-                    loginSuccessful=true
-                     window.open("Generative AI/index.html");          
-                }              
+        user.forEach((user)=>{            
             if (user.email==email && user.password==password) {
                alert("Login Successful") 
                loginSuccessful=true
                 window.open("Generative AI/index.html");
             }
         })
+        inputField.addEventListener("keypress", function(event) {
+            if (event.key === "Enter"){
+                alert("Login Successful") 
+                loginSuccessful=true
+                 window.open("Generative AI/index.html");          
+            }  
         
         if (!loginSuccessful) {
             alert("User inputs not registered")   
