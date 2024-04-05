@@ -12,7 +12,6 @@ body{
 .name{
     color: #fff;
     display: flex;
-    margin: 1% 1%;
 }
 a{
     text-decoration: none;

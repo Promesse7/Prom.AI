@@ -11,9 +11,10 @@
 <body>
     <section class="container">
         <nav class="first_nav">
-            <div class="icon_st">
-              <img src="./images/logo.png" alt="my gigantic logo">
-            </div>
+          <div class="icon_st">
+            <a href="./index.html">   <img src="./images/logo.png" alt="my gigantic logo"></a>
+         
+          </div>
             <hr class="sep">
             <div class="icon_th">
              <a href="#">
@@ -156,6 +157,7 @@
               answerLength = answer.length;
               typing();
   }
+});
 
       document.addEventListener('click',function(e){
           if (e.target.id =='btn') {
@@ -168,13 +170,10 @@
               if (question == "how are you") {
                   answer = "Just fine! what about you?"
               }
-              // if (question.length) {
-              //     answer = "VS Code uses TypeScript type declaration (typings) files (for example node.d.ts) to provide metadata to VS Code about the JavaScript based frameworks you are consuming in your application. Type declaration files are written in TypeScript so they can express the data types of parameters and functions, allowing VS Code to provide a rich IntelliSense experience. Thanks to a feature called Automatic Type Acquisition, you do not have to worry about downloading these type declaration files, VS Code will install them automatically for you"
-              // }
               answerLength = answer.length;
               typing();
           }
-      });
+      })
       function typing(){
       if(i < answerLength){
           answerEl= document.getElementById('answer');
@@ -186,6 +185,7 @@
           setTimeout(typing, speed);
           }
       }
+    
           </script>
          <!------------------ spiner *start* -------------->
 
@@ -200,10 +200,8 @@
     loader.classList.add("loader-hidden");
         loader.addEventListener("transtionend",()=>{
             document.body.removeChild("loader")
-        })
-    
-   
-})
+        });
+});
 </script>
 
 
