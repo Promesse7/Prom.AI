@@ -54,13 +54,11 @@ if(i < answerLength){
 
 //starting of my chit-chat
 
-const chatHeader = document.querySelector('.icon-bot')
-const chatMessages = document.querySelector('.response')
+const chatHeader = document.querySelector('.chat-header')
+const chatMessages = document.querySelector('.chat-messages')
 const chatInputForm = document.querySelector('.chat-input-form')
 const chatInput = document.querySelector('.chat-input')
 
-
-const messages = JSON.parse(localStorage.getItem('messages')) || []
 
 const createChatMessageElement = (message) => `
       <div class="response" id="answer"></div>
