@@ -74,8 +74,8 @@ const sendMessage = (e) =>{
     e.preventDefault();
 
     chatMessages.innerHTML += createChatMessageElement(message)
-    chatInputForm.reset()
+    chatInput.reset()
     chatMessages.scrollTop = chatMessages.scrollHeight
 }
 
-chatInputForm.addEventListener('submit', sendMessage)
+chatInput.addEventListener('submit', sendMessage)
