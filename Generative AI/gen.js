@@ -55,7 +55,7 @@ if(i < answerLength){
 //starting of my chit-chat
 
 const chatHeader = document.querySelector('.chat-header')
-const chatMessages = document.querySelector('.chat-messages')
+const chatMessages = document.querySelector('.response')
 const chatInputForm = document.querySelector('.chat-input-form')
 const chatInput = document.querySelector('.chat-input')
 
