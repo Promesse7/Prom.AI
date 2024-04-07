@@ -156,6 +156,12 @@ a:active{
 .response-container{
     display: flex;
     margin-top: 5px;
+    height:25em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.response-container::-webkit-scrollbar{
+    display: none;
 }
 .icon-bot{
     padding: 2px;
