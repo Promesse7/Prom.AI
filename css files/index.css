@@ -111,6 +111,7 @@ nav.topbar{
     border: 0;
     outline: 0;
     border-radius: 8px;
+    font-size: medium;
 }
 .button a{
     color: #58b908;
