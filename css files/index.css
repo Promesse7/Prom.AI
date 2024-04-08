@@ -94,14 +94,13 @@ nav.topbar{
  margin-right: 11vw;
 }
 .windows{
-
-  border-right: 0;
-  margin-top: 10vh;
-  padding: 5px;
-  font-size: 10px;
-  font-weight: lighter;
-  width: 12vw;
-  color: #58b908;
+      border-right: 0;
+      margin-top: 10vh;
+      padding: 5px;
+      font-size: 10px;
+      font-weight: lighter;
+       width: 12vw;
+       color: #58b908;
 }
 
 .button{
@@ -112,6 +111,7 @@ nav.topbar{
     background-color: #58b908;
     border: 0;
     outline: 0;
+    padding-top: 5px;
     border-radius: 8px;
 }
 .button a{
@@ -129,8 +129,60 @@ b{
 
 
     /*   responsiveness starts here   */
-    @media screen {
-        
+    @media  screen and (min-width: 480px){
+        body{
+            height: 100vh;
+            background-color: rgb(14, 19, 32);
+            }  
+            nav.topbar{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+                justify-content: space-around;
+                background-color:rgb(14, 19, 32) ;
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+            }
+            .topbar h1{
+                font-size: 12px;
+                font-weight: 100;
+                cursor: pointer;
+            }
+            .top1{
+                margin-right: 8vw;
+            }
+            .top7{
+                margin-right: 9vw;
+            }
+            .top4,.top6{
+                width: 0px;
+                height: 0px;
+                content: " ";
+            }
+            .top8 button{
+                height: 25px;
+                width: 100px;
+            }
+/* topbar ends here */
+
+
+/* middle-container starts here */
+    .middle-container{
+          margin: 5vh 2.5vw 2.5vh 2.5vw;
+          width: 100vw;
+          display: block;
+    }
+    .description{
+       padding-top: 5vh;
+    }
+    .landing{
+        padding-left: 2.5vw;
+    }
+    .boxes{
+        margin-right: 6vw;
+    }
+
     }
 
     /*   responsiveness ends here   */
