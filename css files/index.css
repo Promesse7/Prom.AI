@@ -76,7 +76,9 @@ nav.topbar{
     color: #fff;
    padding-top: 10vh;
 }
-
+.description p{
+    word-wrap: break-word;
+}
 .landing{
     color: #58b908;
     font-family:Cambria, Cochin, Georgia, Times, serif;
