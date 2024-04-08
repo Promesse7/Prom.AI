@@ -171,8 +171,8 @@ a:active{
     height: 70vh;
     margin: 15px;
     margin-left: 5vw;
-    background-color:transparent ;
-    color: #a19f9f;
+    background-color:#b3b3b380 ;
+    color: #7a7a7a;
     font-size: 20px;
 }
 .container{
