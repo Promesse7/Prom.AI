@@ -9,7 +9,6 @@ var answerLength;
     if (event.key === "Enter"){   
         document.getElementById('answer').style.display = 'block';
     let question = document.getElementById('queryInput').value;
-
     answer = 'I cannot understand your question.';
     if (question.length) {
         answer = "VS Code uses TypeScript type declaration (typings) files (for example node.d.ts) to provide metadata to VS Code about the JavaScript based frameworks you are consuming in your application. Type declaration files are written in TypeScript so they can express the data types of parameters and functions, allowing VS Code to provide a rich IntelliSense experience. Thanks to a feature called Automatic Type Acquisition, you do not have to worry about downloading these type declaration files, VS Code will install them automatically for you"
