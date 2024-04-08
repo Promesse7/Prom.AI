@@ -7,6 +7,8 @@ body{
 background: url(/Photos-001/index-background.jpg);
 background-size: cover;
 background-repeat: no-repeat;
+height: 100vh;
+background-color: rgb(14, 19, 32);
 }
 
 
@@ -124,3 +126,11 @@ b{
 }
 
 /* middle-container ends here */
+
+
+    /*   responsiveness starts here   */
+    @media screen {
+        
+    }
+
+    /*   responsiveness ends here   */
