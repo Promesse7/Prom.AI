@@ -295,7 +295,7 @@ a:hover{
         font-weight: bold;
     }
     .chat-messages{
-        height:40vh;
+        height:80vh;
         overflow-y: scroll;
         overflow-x: hidden;
     }
