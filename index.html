@@ -3,94 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css files/index.css">
-    <link rel="stylesheet" href="css files/spinner.css">
-    <link rel="icon" href="/Photos-001/icon.png">
-    <title>Prom.AI</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <script src="./js/index.js"> </script> -->
+    <title>Chat with me</title>
 </head>
 <body>
-    <nav class="topbar">
-        <div class="top1">
-            <H1>Prom</H1><H1 style="color: #58b908;">AI</H1>
-               </div>
-               <div class="top2">
-                   <h1 style="color: #58b908;"><a href="home.html"  style="color: #58b908;">Home</a></h1>
-               </div>
-                
-               <div class="top3">
-                  <a href="#"><h1>Chat</h1></a> 
-               </div>
-       
-               <div class="top4">
-                  <a href="#"><h1>Pages</h1></a> 
-               </div>
-               
-               <div class="top5">
-                  <a href="services.html"><h1>Service</h1></a> 
-               </div>
-               <div class="top6">
-                  <a href="#"> <h1>Pricing</h1></a>
-               </div>
-       
-               <div class="top7">
-                   <h1><a href="./contact.html">Contact</a> </h1>
-               </div>
-        <div class="top8">
-            <button type="button"><a href="./login.html">Login Now</a></button> 
-         </div>
-    </nav>
-    <nav class="middle-container">
-        <div class="description">
-         <a href="./Generative AI/index.html"><h2 class="landing">- PromAI Demo -</h2></a>   
-            <br>
-            <h3 class="AI">AI Chatting Landing Page</h3>
-            <br>
-            <p>PromAI is a Demo for an AI Chatbot landing page with conversing user interface pages.</p>
-             <br>
-             <br>
-             <br>
-            <div class="button"><h3><a href="./Generative AI/index.html">Request Demo</a></h3></div>
-        </div>
-        <div class="boxes">
-            <div class="windows">
-             <a href="./Generative AI/ask.html"></a><h2 style="padding-left: 4vw;">Ask Anything></h2>
+    <div class="person-selector">
+        <button class="button person-selector-button active-person" id="john-selector">John</button>
+        <button class="button person-selector-button" id="jane-selector">Jane</button>
+    </div>
+    <div class="chat-container">
+        <h2 class="chat-header">John chatting...</h2>
+
+        <div class="chat-messages">
+            <div class="message blue-bg">
+                <div class="message-sender">John</div>
+                <div class="message-text">Hey Jane, What's up?</div>
+                <div class="message-timestamp">10:35 AM</div>
             </div>
-
-            <div class="windows">
-                <h2 style="padding-left: 1vw;">Image Generator ></h2>
-                </div>
-
-            <div class="windows">
-                 <h2 style="padding-left: 2vw;">Code Generator ></h2>
-                </div>
-
-            <div class="windows">
-                <h2 style="padding-left: 3vw;"> Content Writer ></h2>
-                    </div>                
+            <div class="message gray-bg">
+                <div class="message-sender">Jane</div>
+                <div class="message-text">Not much. Just living the dream! How about you?</div>
+                <div class="message-timestamp">10:40 AM</div>
+            </div>
         </div>
-    </nav>
 
-        <!------------------ spiner *start* -------------->
-
-
-
-
-<div class="loader"></div>
-<script>
-  window.addEventListener("load", ()=>{
-    const loader =document.querySelector(".loader");
-
-    loader.classList.add("loader-hidden");
-        loader.addEventListener("transtionend",()=>{
-            document.body.removeChild("loader")
-        })
-    
-   
-})
-</script>
-
-
-
-<!------------------ spiner *end* -------------->
+        <form class="chat-input-form">
+            <input type="text" required placeholder="Type here John..." class="chat-input">
+            <button type="submit" class="button send-button">Send</button>
+        </form>
+        <button class="button clear-chat-button">Clear Chat</button>
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
