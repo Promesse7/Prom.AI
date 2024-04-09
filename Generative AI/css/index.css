@@ -157,9 +157,7 @@ a:active{
 .response-container{
     display: flex;
     margin-top: 5px;
-    height:25em;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height:auto;
 }
 .response-container::-webkit-scrollbar{
     display: none;
