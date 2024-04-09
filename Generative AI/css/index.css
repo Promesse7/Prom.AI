@@ -299,7 +299,7 @@ a:hover{
         font-weight: bold;
     }
     .chat-messages{
-        height:25em;
+        height:auto;
         overflow-y: scroll;
         overflow-x: hidden;
     }
