@@ -173,10 +173,8 @@ a:active{
     border-radius: 50%;
 }
 .response{
-    width: 55vw;
-    height: 70vh;
-    margin: 15px;
-    margin-left: 5vw;
+    width: 100%;
+    height: 100%;
     background-color:transparent ;
     color: #a19f9f;
 }
