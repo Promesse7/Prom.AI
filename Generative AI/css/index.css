@@ -277,3 +277,58 @@ a:hover{
         margin-left: 0px;
         padding-top: 5px;
        }
+       /* styling the inserted divs of response */
+
+       .chat-container{
+        background-color: #15202b;
+        font-family: 'roboto',sans-serif;
+        border-radius: 0.5em;
+        padding: 0.5em 1.25em;
+        margin: auto;
+        max-width:37.5em;
+        height:86%;
+        box-shadow: 0 0 1.25em 0.5em #c3c3c333;
+    }
+    .chat-header{
+        margin-bottom: 1em;
+        color: #fff;
+    }
+    .chat-header h2{
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+    .chat-messages{
+        height:25em;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .chat-messages::-webkit-scrollbar{
+        display: none;
+    }
+    .message{
+        padding: 0.625em;
+        border-radius:1em;
+        margin-bottom: 0.625em;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+    .message-sender{
+        font-weight: bold;
+        margin-bottom: 0.31em;
+    }
+    .message-text{
+        font-size: 1em;
+        margin-bottom: 0.31em;
+        word-wrap: break-word;
+    }
+    .message-timestamp{
+        font-size: 0.75em;
+        text-align: right;
+    }
+    .blue-bg{
+        background-color: #1c9bef;
+    }
+    .gray-bg{
+        background-color: #3d5365;
+    }

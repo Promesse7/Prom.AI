@@ -54,28 +54,3 @@ if(i < answerLength){
 
 //starting of my chit-chat
 
-const chatHeader = document.querySelector('.chat-header')
-const chatMessages = document.querySelector('.response')
-const chatInputForm = document.querySelector('.chat-input-form')
-const chatInput = document.querySelector('.chat-input')
-
-
-const createChatMessageElement = (message) => `
-      <div class="response" id="answer"></div>
-`
-
-window.onload = () => {
-    messages.forEach((message) => {
-        chatMessages.innerHTML += createChatMessageElement(message)
-    });
-}
-
-const sendMessage = (e) =>{
-    e.preventDefault();
-
-    chatMessages.innerHTML += createChatMessageElement(message)
-    chatInput.reset()
-    chatMessages.scrollTop = chatMessages.scrollHeight
-}
-
-chatInput.addEventListener('submit', sendMessage)
