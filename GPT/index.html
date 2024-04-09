@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q&A App</title>
+    <style>
+        /* style.css */
+#app {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#questionInput {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#submitQuestion {
+    padding: 10px 20px;
+}
+
+#qaDisplay {
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="text" id="questionInput" placeholder="Ask your question here...">
+        <button id="submitQuestion">Submit</button>
+        <div id="qaDisplay"></div>
+    </div>
+    <script >
+        // script.js
+document.getElementById('submitQuestion').addEventListener('click', function() {
+    let question = document.getElementById('questionInput').value;
+    let answer = "Thanks for asking! Here's a response."; // Placeholder response
+
+    // Ensure there's a question before processing
+    if(question.trim() !== "") {
+        displayQA(question, answer);
+    } else {
+        alert('Please enter a question.');
+    }
+});
+
+function displayQA(question, answer) {
+    let displayElement = document.getElementById('qaDisplay');
+    displayElement.innerHTML = `<p><strong>Question:</strong> ${question}</p><p><strong>Answer:</strong> ${answer}</p>`;
+}
+
+    </script>
+</body>
+</html>
