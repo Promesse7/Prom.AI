@@ -217,7 +217,7 @@
 const chatHeader = document.querySelector('.chat-header')
 const chatMessages = document.querySelector('.chat-messages')
 const chatInputForm = document.querySelector('.chat-input-form')
-const chatInput = document.querySelector('.chat-input')
+const chatInput = document.querySelector('.queryInput')
 const clearChatBtn = document.querySelector('.clear-chat-button') 
 
 
@@ -226,7 +226,7 @@ const messages = JSON.parse(localStorage.getItem('messages')) || []
             if (document.activeElement === chatInput) {
                 console.log('The text input is active.');
             }
-            
+
 const createChatMessageElement = (message) => `
        <div class="message ${messageSender === 'John' ? 'blue-bg' : 'gray-bg'}">
        <div class="message-sender">${messageSender}</div>
