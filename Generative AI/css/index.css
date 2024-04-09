@@ -154,14 +154,14 @@ a:active{
     width: 40px;
     height: 25px;
 }
-.response-container{
+/* .response-container{
     display: flex;
     margin-top: 5px;
     height:auto;
-}
-.response-container::-webkit-scrollbar{
+} */
+/* .response-container::-webkit-scrollbar{
     display: none;
-}
+} */
 .icon-bot{
     padding: 2px;
     padding-top: 6px;
@@ -297,7 +297,7 @@ a:hover{
         font-weight: bold;
     }
     .chat-messages{
-        height:auto;
+        height:40vh;
         overflow-y: scroll;
         overflow-x: hidden;
     }
