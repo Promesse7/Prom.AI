@@ -322,11 +322,13 @@ a:hover{
     }
     .message-sender p{
         margin-top: 10px;
+        margin-left: 5px;
     }
     .message-text{
         font-size: 1em;
         margin-bottom: 0.31em;
         word-wrap: break-word;
+        margin-left: 15px;
     }
     .message-timestamp{
         font-size: 0.75em;
@@ -337,6 +339,7 @@ a:hover{
     }
     .gray-bg{
         background-color: #3f5161c2;
+        text-align: right;
     }
 
     .major{
