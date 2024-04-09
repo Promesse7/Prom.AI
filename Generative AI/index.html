@@ -118,24 +118,22 @@
 
 <!-- inserting answer divs -->
 <section class="major">
-
   <div class="chat-messages">
+    <div class="message gray-bg">
+        <div class="message-sender">User</div>
+        <div class="message-text">Not much. Just living the dream! How about you?</div>
+        <div class="message-timestamp">10:40 AM</div>
+    </div>
       <div class="message blue-bg">
             <div class="message-sender"> 
-               <img src="./images/logo.png" alt="my gigantic logo"> 
-               <p>PromAI</p>
+              <img src="./images/logo.png" alt="my gigantic logo"> 
+              <p>PromAI</p>
       </div>  
         <div class="message-text"> 
            <div class="response" id="answer"></div>
           </div>
         <div class="message-timestamp">10:35 AM</div>
     </div>
-    <div class="message gray-bg">
-        <div class="message-sender">User</div>
-        <div class="message-text">Not much. Just living the dream! How about you?</div>
-        <div class="message-timestamp">10:40 AM</div>
-    </div>
-
   </div>
             <div class="container">
         <form  class="chat-input-form">
@@ -216,8 +214,8 @@
       // inserting these js codes from john jane chat
 
 
-document.getElementById('submitQuestion').addEventListener('click', function() {
-    let questionInput = document.getElementById('questionInput');
+document.getElementById('btn').addEventListener('click', function() {
+    let questionInput = document.getElementById('queryInput');
     let question = questionInput.value;
     let answer = "This is a dynamically generated answer based on your question."; // Example response
 
@@ -234,22 +232,34 @@ function displayQA(question, answer) {
     let displayElement = document.getElementById('qaDisplay');
 
     // Create question element
-    let questionElement = document.createElement('div');
-    questionElement.classList.add('question');
-    questionElement.textContent = `Q: ${question}`;
+    const createChatMessageElement = (question) => `
+       <div class="message gray-bg}">
+       <div class="message-sender">User</div>
+       <div class="message-text">${message.text}</div>
+       <div class="message-timestamp">${message.timestamp}</div>
+       </div>
+`
 
     // Create answer element
-    let answerElement = document.createElement('div');
-    answerElement.classList.add('answer');
-    answerElement.textContent = `A: ${answer}`;
+    const createChatResponseElement = (answer) => `
+       <div class="message blue-bg">
+       <div class="message-sender">
+        <img src="./images/logo.png" alt="my gigantic logo"> 
+        <p>PromAI</p>  
+      </div>
+       <div class="message-text"></div>
+       <div class="message-timestamp">${message.timestamp}</div>
+       </div>
+`
 
     // Append both question and answer to the display
-    displayElement.appendChild(questionElement);
-    displayElement.appendChild(answerElement);
+    displayElement.createChatMessageElement=(message);
+    displayElement.createChatResponseElement=(message);
 
     // Optional: Scroll to the bottom of the display element to show the latest Q&A
     displayElement.scrollTop = displayElement.scrollHeight;
 }
+const timestamp = new Date().toLocaleString('en-US', { hour:'numeric', minute:'numeric', hour12:true })
 
  
     
