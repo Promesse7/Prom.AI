@@ -133,7 +133,7 @@
     <div class="message gray-bg">
         <div class="message-sender">User</div>
         <div class="message-text">Not much. Just living the dream! How about you?</div>
-        <div class="message-timestamp"><a href="../GPT/index.html">10:40 AM</a></div>
+        <div class="message-timestamp">10:40 AM</div>
     </div>
 
   </div>
@@ -171,7 +171,6 @@
 
       queryInput.addEventListener("keypress", function(event) {
   if (event.key === "Enter"){
-              e.preventDefault();
               document.getElementById('answer').style.display = 'block';
               let question = document.getElementById('queryInput').value;
               answer = 'I cannot understand your question.';
@@ -185,19 +184,9 @@
               typing();
   }
 });
-const createChatMessageElement = (message) => `
-       <div class="message ${messageSender === 'John' ? 'blue-bg' : 'gray-bg'}">
-       <div class="message-sender"> 
-          <div class="response" id="answer">${messageSender}</div>
-       </div>
-       <div class="message-text">${message.text}</div>
-       <div class="message-timestamp">${message.timestamp}</div>
-       </div>
-`
 
       document.addEventListener('click',function(e){
           if (e.target.id =='btn') {
-            e.preventDefault();
               document.getElementById('answer').style.display = 'block';
               let question = document.getElementById('queryInput').value;
               answer = 'I cannot understand your question.';
@@ -213,9 +202,7 @@ const createChatMessageElement = (message) => `
       })
       function typing(){
       if(i < answerLength){
-        chatMessages.innerHTML += createChatMessageElement(message)
-        chatInputForm.reset()
-        chatMessages.scrollTop = chatMessages.scrollHeight
+          answerEl= document.getElementById('answer');
           answerEl.innerHTML += answer[i] + '|';
           i++;
           setTimeout(() => {
@@ -227,54 +214,45 @@ const createChatMessageElement = (message) => `
 
 
       // inserting these js codes from john jane chat
-const chatMessages = document.querySelector('.chat-messages')
-const chatInputForm = document.querySelector('.chat-input-form')
-const chatInput = document.querySelector('.queryInput')
-const clearChatBtn = document.querySelector('.clear-chat-button') 
 
 
-const messages = JSON.parse(localStorage.getItem('messages')) || []
+document.getElementById('submitQuestion').addEventListener('click', function() {
+    let questionInput = document.getElementById('questionInput');
+    let question = questionInput.value;
+    let answer = "This is a dynamically generated answer based on your question."; // Example response
 
-            if (document.activeElement === chatInput) {
-                console.log('The text input is active.');
-            }
-
-
-
-window.onload = () => {
-    messages.forEach((message) => {
-        chatMessages.innerHTML += createChatMessageElement(message)
-    });
-}
-
-let messageSender = 'User'
-const updateMessageSender = (name) =>{
-    messageSender = name
-    chatHeader.innerText = `${messageSender}` 
-    chatInput.placeholder = `Type here, ${messageSender}...`
-
-    chatInput.focus()
-}
-chatInput.onclick = () => updateMessageSender('PromAI')
-const sendMessage = (e) =>{
-    e.preventDefault();
-
-    const timestamp = new Date().toLocaleString('en-US', { hour:'numeric', minute:'numeric', hour12:true })
-    const message = {
-        send: messageSender,
-        text:chatInput.value,
-        timestamp,
+    // Ensure there's a question before processing
+    if(question.trim() !== "") {
+        displayQA(question, answer);
+        questionInput.value = ""; // Clear input after submitting
+    } else {
+        alert('Please enter a question.');
     }
-    chatMessages.innerHTML += createChatMessageElement(message)
-    
-    // messages.push(message)
-    // localStorage.setItem('messages', JSON.stringify(messages))
+});
 
-    chatInputForm.reset()
-    chatMessages.scrollTop = chatMessages.scrollHeight
+function displayQA(question, answer) {
+    let displayElement = document.getElementById('qaDisplay');
+
+    // Create question element
+    let questionElement = document.createElement('div');
+    questionElement.classList.add('question');
+    questionElement.textContent = `Q: ${question}`;
+
+    // Create answer element
+    let answerElement = document.createElement('div');
+    answerElement.classList.add('answer');
+    answerElement.textContent = `A: ${answer}`;
+
+    // Append both question and answer to the display
+    displayElement.appendChild(questionElement);
+    displayElement.appendChild(answerElement);
+
+    // Optional: Scroll to the bottom of the display element to show the latest Q&A
+    displayElement.scrollTop = displayElement.scrollHeight;
 }
 
-
+ 
+    
           </script>
          <!------------------ spiner *start* -------------->
 
