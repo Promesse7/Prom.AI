@@ -316,10 +316,12 @@ a:hover{
         display: flex;
     }
     .message-sender img{
-        margin-top: 10px;
         width: 40px;
         height: 40px;
         border-radius: 50%;
+    }
+    .message-sender p{
+        margin-top: 10px;
     }
     .message-text{
         font-size: 1em;
