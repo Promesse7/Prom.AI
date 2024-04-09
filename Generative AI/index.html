@@ -261,6 +261,55 @@ function displayQA(question, answer) {
 }
 const timestamp = new Date().toLocaleString('en-US', { hour:'numeric', minute:'numeric', hour12:true })
 
+
+
+queryInput.addEventListener("keypress", function(event) {
+  let questionInput = document.getElementById('queryInput');
+    let question = questionInput.value;
+    let answer = "This is a dynamically generated answer based on your question."; // Example response
+
+    // Ensure there's a question before processing
+    if(question.trim() !== "") {
+        displayQA(question, answer);
+        questionInput.value = ""; // Clear input after submitting
+    } else {
+        alert('Please enter a question.');
+    }
+});
+
+function displayQA(question, answer) {
+    let displayElement = document.getElementById('chat-messages');
+
+    // Create question element
+    const createChatMessageElement = (question) => `
+       <div class="message gray-bg}">
+       <div class="message-sender">User</div>
+       <div class="message-text">${message.text}</div>
+       <div class="message-timestamp">${message.timestamp}</div>
+       </div>
+`
+
+    // Create answer element
+    const createChatResponseElement = (answer) => `
+       <div class="message blue-bg">
+       <div class="message-sender">
+        <img src="./images/logo.png" alt="my gigantic logo"> 
+        <p>PromAI</p>  
+      </div>
+       <div class="message-text"></div>
+       <div class="message-timestamp">${message.timestamp}</div>
+       </div>
+`
+
+    // Append both question and answer to the display
+    displayElement.createChatMessageElement=(message);
+    displayElement.createChatResponseElement=(message);
+
+    // Optional: Scroll to the bottom of the display element to show the latest Q&A
+    displayElement.scrollTop = displayElement.scrollHeight;
+}
+
+
  
     
           </script>
