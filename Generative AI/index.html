@@ -241,26 +241,15 @@ window.onload = () => {
     });
 }
 
-let messageSender = 'John'
+let messageSender = 'User'
 const updateMessageSender = (name) =>{
     messageSender = name
-    chatHeader.innerText = `${messageSender} chatting...` 
+    chatHeader.innerText = `${messageSender}` 
     chatInput.placeholder = `Type here, ${messageSender}...`
 
-    if (name === 'John') {
-        johnSelectorBtn.classList.add('active-person')
-        janeSelectorBtn.classList.remove('active-person')
-    }
-    if (name === 'Jane') {
-        johnSelectorBtn.classList.remove('active-person')
-        janeSelectorBtn.classList.add('active-person')
-    }
     chatInput.focus()
 }
-
-johnSelectorBtn.onclick = () => updateMessageSender('John')
-janeSelectorBtn.onclick = () => updateMessageSender('Jane') 
-
+chatInput.onclick = () => updateMessageSender('PromAI')
 const sendMessage = (e) =>{
     e.preventDefault();
 
@@ -272,19 +261,15 @@ const sendMessage = (e) =>{
     }
     chatMessages.innerHTML += createChatMessageElement(message)
     
-    messages.push(message)
-    localStorage.setItem('messages', JSON.stringify(messages))
+    // messages.push(message)
+    // localStorage.setItem('messages', JSON.stringify(messages))
+
     chatInputForm.reset()
     chatMessages.scrollTop = chatMessages.scrollHeight
 }
 
 chatInputForm.addEventListener('submit', sendMessage)
 
-clearChatBtn.addEventListener('click', () =>{
-    localStorage.clear()
-    chatMessages.innerHTML = ''
-})
-    
           </script>
          <!------------------ spiner *start* -------------->
 
