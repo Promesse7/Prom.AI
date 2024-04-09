@@ -25,6 +25,22 @@
     border-top: 2px solid #ddd;
     padding-top: 20px;
 }
+/* Additional styles */
+.question, .answer {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.question {
+    background-color: #007BFF; /* Blue */
+}
+
+.answer {
+    background-color: #28A745; /* Green */
+    margin-bottom: 20px; /* Increased space after the answer */
+}
 
     </style>
 </head>
@@ -35,14 +51,15 @@
         <div id="qaDisplay"></div>
     </div>
     <script >
-        // script.js
 document.getElementById('submitQuestion').addEventListener('click', function() {
-    let question = document.getElementById('questionInput').value;
-    let answer = "Thanks for asking! Here's a response."; // Placeholder response
+    let questionInput = document.getElementById('questionInput');
+    let question = questionInput.value;
+    let answer = "This is a dynamically generated answer based on your question."; // Example response
 
     // Ensure there's a question before processing
     if(question.trim() !== "") {
         displayQA(question, answer);
+        questionInput.value = ""; // Clear input after submitting
     } else {
         alert('Please enter a question.');
     }
@@ -50,7 +67,23 @@ document.getElementById('submitQuestion').addEventListener('click', function() {
 
 function displayQA(question, answer) {
     let displayElement = document.getElementById('qaDisplay');
-    displayElement.innerHTML = `<p><strong>Question:</strong> ${question}</p><p><strong>Answer:</strong> ${answer}</p>`;
+
+    // Create question element
+    let questionElement = document.createElement('div');
+    questionElement.classList.add('question');
+    questionElement.textContent = `Q: ${question}`;
+
+    // Create answer element
+    let answerElement = document.createElement('div');
+    answerElement.classList.add('answer');
+    answerElement.textContent = `A: ${answer}`;
+
+    // Append both question and answer to the display
+    displayElement.appendChild(questionElement);
+    displayElement.appendChild(answerElement);
+
+    // Optional: Scroll to the bottom of the display element to show the latest Q&A
+    displayElement.scrollTop = displayElement.scrollHeight;
 }
 
     </script>
