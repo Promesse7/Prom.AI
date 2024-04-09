@@ -185,9 +185,19 @@
               typing();
   }
 });
+const createChatMessageElement = (message) => `
+       <div class="message ${messageSender === 'John' ? 'blue-bg' : 'gray-bg'}">
+       <div class="message-sender"> 
+          <div class="response" id="answer">${messageSender}</div>
+       </div>
+       <div class="message-text">${message.text}</div>
+       <div class="message-timestamp">${message.timestamp}</div>
+       </div>
+`
 
       document.addEventListener('click',function(e){
           if (e.target.id =='btn') {
+            e.preventDefault();
               document.getElementById('answer').style.display = 'block';
               let question = document.getElementById('queryInput').value;
               answer = 'I cannot understand your question.';
@@ -203,7 +213,9 @@
       })
       function typing(){
       if(i < answerLength){
-          answerEl= document.getElementById('answer');
+        chatMessages.innerHTML += createChatMessageElement(message)
+        chatInputForm.reset()
+        chatMessages.scrollTop = chatMessages.scrollHeight
           answerEl.innerHTML += answer[i] + '|';
           i++;
           setTimeout(() => {
@@ -227,13 +239,7 @@ const messages = JSON.parse(localStorage.getItem('messages')) || []
                 console.log('The text input is active.');
             }
 
-const createChatMessageElement = (message) => `
-       <div class="message ${messageSender === 'John' ? 'blue-bg' : 'gray-bg'}">
-       <div class="message-sender">${messageSender}</div>
-       <div class="message-text">${message.text}</div>
-       <div class="message-timestamp">${message.timestamp}</div>
-       </div>
-`
+
 
 window.onload = () => {
     messages.forEach((message) => {
