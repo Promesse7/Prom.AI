@@ -171,6 +171,7 @@
 
       queryInput.addEventListener("keypress", function(event) {
   if (event.key === "Enter"){
+              e.preventDefault();
               document.getElementById('answer').style.display = 'block';
               let question = document.getElementById('queryInput').value;
               answer = 'I cannot understand your question.';
@@ -214,7 +215,6 @@
 
 
       // inserting these js codes from john jane chat
-const chatHeader = document.querySelector('.chat-header')
 const chatMessages = document.querySelector('.chat-messages')
 const chatInputForm = document.querySelector('.chat-input-form')
 const chatInput = document.querySelector('.queryInput')
