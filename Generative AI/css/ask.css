@@ -233,7 +233,7 @@ a:hover{
 
     /* Customize the scrollbar */
     ::-webkit-scrollbar {
-        width: 5px; /* Width of the scrollbar */
+        width: 0px; /* Width of the scrollbar */
       }
       
       /* Track */
@@ -263,7 +263,10 @@ a:hover{
        }
 
 /* inserted styles from the chatGPT  things */
-
+#user-input{
+    margin-top: 5px;
+    margin-left: 2px;
+}
 
 /* Chat container styling */
 .chat-container {
