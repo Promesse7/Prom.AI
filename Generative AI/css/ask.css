@@ -276,17 +276,19 @@ a:hover{
 
 
 /* Chat container styling */
-    .chat-container {
-        width: 500px;
-        margin: 0 auto;
-        border: 1px solid #ddd;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #f5f5f5;
-        overflow-y: scroll; /* Add scrollbar for long conversations */
-        max-height: 300px; /* Limit container height to avoid taking up too much space */
+.chat-container {
+    width: 80vh;
+    margin: 0 auto;
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+      .chat-input{
+        display: flex;
       }
-  
       /* Message container styling (general) */
       .message {
         margin-bottom: 10px;
