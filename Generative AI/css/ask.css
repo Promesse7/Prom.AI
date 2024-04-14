@@ -271,3 +271,59 @@ a:hover{
         margin-left: 0px;
         padding-top: 5px;
        }
+
+/* inserted styles from the chatGPT  things */
+
+
+/* Chat container styling */
+    .chat-container {
+        width: 500px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        overflow-y: scroll; /* Add scrollbar for long conversations */
+        max-height: 300px; /* Limit container height to avoid taking up too much space */
+      }
+  
+      /* Message container styling (general) */
+      .message {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+  
+      /* User message styling */
+      .user-message {
+        background-color: lightblue;
+        color: black;
+      }
+  
+      /* Bot message styling */
+      .bot-message {
+        background-color: lightgray;
+        color: black;
+      }
+  
+      /* Message sender styling */
+      .message-sender {
+        font-weight: bold;
+      }
+  
+      /* Message text styling */
+      .message-text {
+        flex-grow: 1;
+      }
+  
+      /* Typing effect styling */
+      .typing::after {
+        content: '|';
+        animation: blink-caret 0.75s infinite;
+      }
+  
+      @keyframes blink-caret {
+        50% {
+          opacity: 0;
+        }
+      }
