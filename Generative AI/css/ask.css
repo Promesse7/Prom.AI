@@ -277,7 +277,7 @@ a:hover{
     border-radius: 10px;
     background-color: transparent;
     overflow-y: scroll;
-    max-height: 65vh;
+    height: 65vh;
     margin-bottom: 10vh;
 }
       .chat-input{
