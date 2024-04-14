@@ -187,7 +187,7 @@ button{
     border: 0px;
     cursor: pointer;
 }
-.container input{
+.search{
     border: 0px;
     background-color: transparent;
     width: 54vw;
@@ -265,7 +265,8 @@ a:hover{
 /* inserted styles from the chatGPT  things */
 #user-input{
     margin-top: 5px;
-    margin-left: 2px;
+    margin-left: 2px; 
+    height: 25px;
 }
 
 /* Chat container styling */
