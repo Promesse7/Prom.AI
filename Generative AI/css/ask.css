@@ -293,8 +293,9 @@ a:hover{
         border-radius: 1em;
         margin-bottom: 0.625em;
         display: flex;
+        flex-direction: column;
         color: #fff;
-        width: 60vw;
+        width: 40vw;
       }
   
       /* User message styling */
