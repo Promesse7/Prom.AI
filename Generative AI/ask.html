@@ -118,8 +118,8 @@
           <div class="chat-container" id="chat-container">
             <!-- Initial welcome message -->
             <div class="message bot-message" id="initial-message">
-              <div class="message-sender">ChatBot</div>
-              <div class="message-text">Welcome! How can I assist you today?</div>
+              <div class="message-sender"><center>PromAI</center> </div>
+              <div class="message-text"><center>Welcome! How can I assist you today?</center></div>
             </div>
           </div>
           <div class="chat-input">
@@ -137,34 +137,22 @@
     </section>
 
     <script>
-
-    // Function to handle user input and generate bot response
     const handleUserInput = () => {
       const userInput = document.getElementById("user-input").value.trim().toLowerCase();
       if (userInput === "") return; // Ignore empty input
-      
-      // Create user message element
-      appendMessage("User", userInput, "user-message");
-
-      // Fetch bot response asynchronously
+      appendMessage("You", userInput, "user-message");
       fetchBotResponse(userInput);
-      
-      // Clear input field
-      document.getElementById("user-input").value = "";
+            document.getElementById("user-input").value = "";
     };
 
-    // Function to fetch bot response from external source (simulate for demonstration)
     const fetchBotResponse = (userInput) => {
-      // Simulate asynchronous fetch (replace with actual API call)
       setTimeout(() => {
         const botResponse = generateBotResponse(userInput);
         typeResponseWithEffect(botResponse, "chat-container", "bot-message");
       }, 500); // Simulate 0.5 seconds delay
     };
 
-    // Function to generate bot response based on user input (replace with actual response generation logic)
     const generateBotResponse = (userInput) => {
-      // Example response logic (replace with actual implementation)
       const responses = {
         "hello": "Hi there! How can I help you today?",
         "how are you?": "I'm doing well, thank you! What can I assist you with?",
@@ -174,21 +162,19 @@
       return responses[userInput] || "I'm sorry, I don't understand that question.";
     };
 
-    // Function to type response with typing effect
     function typeResponseWithEffect(responseText, targetElementId, className = "bot-message") {
       const targetElement = document.getElementById(targetElementId);
       if (!targetElement) {
         console.error("Error: Target element not found!");
         return;
       }
-
       const message = document.createElement("div");
       message.classList.add("message", className);
       targetElement.appendChild(message);
 
       const messageSender = document.createElement("div");
       messageSender.classList.add("message-sender");
-      messageSender.textContent = "ChatBot";
+      messageSender.textContent = "PromAI";
       message.appendChild(messageSender);
 
       const messageText = document.createElement("div");
@@ -202,9 +188,7 @@
           i++;
           setTimeout(typingLoop, 50);
         } else {
-          // Remove typing effect after typing is done
           messageText.classList.remove("typing");
-          // Scroll to bottom of chat container
           targetElement.scrollTop = targetElement.scrollHeight;
         }
       };
@@ -212,7 +196,6 @@
       typingLoop();
     }
 
-    // Function to append a message to the chat container
     const appendMessage = (sender, text, className) => {
       const chatContainer = document.getElementById("chat-container");
       const message = document.createElement("div");
@@ -222,15 +205,10 @@
         <div class="message-text">${text}</div>
       `;
       chatContainer.appendChild(message);
-
-      // Scroll to bottom of chat container
       chatContainer.scrollTop = chatContainer.scrollHeight;
     };
 
-    // Attach event listener to send button
     document.getElementById("send-button").addEventListener("click", handleUserInput);
-
-    // Optional: Attach event listener to input field for pressing Enter key
     document.getElementById("user-input").addEventListener("keypress", (event) => {
       if (event.key === "Enter") {
         handleUserInput();
