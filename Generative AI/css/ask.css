@@ -270,7 +270,7 @@ a:hover{
 
 /* Chat container styling */
 .chat-container {
-    width: 80vh;
+    width: 100%;
     margin: 5px;
     border: 0px;
     padding: 10px;
@@ -295,7 +295,7 @@ a:hover{
         display: flex;
         flex-direction: column;
         color: #fff;
-        width: 40vw;
+        width: 65vw;
       }
   
       /* User message styling */
