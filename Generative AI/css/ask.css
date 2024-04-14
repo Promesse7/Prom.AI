@@ -278,6 +278,10 @@ a:hover{
     margin-bottom: 10vh;
 }
       .chat-input{
+        border: 0px;
+        border-radius: 5px;
+        background-color: #3b3b3b;
+        height: 60px;
         display: flex;
       }
       /* Message container styling (general) */
@@ -288,6 +292,7 @@ a:hover{
         display: flex;
         flex-direction: column;
         color: #fff;
+        width: 60vw;
       }
   
       /* User message styling */
