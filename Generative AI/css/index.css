@@ -230,11 +230,11 @@ a:hover{
     filter: invert(31%) sepia(19%) saturate(2994%) hue-rotate(54deg) brightness(93%) contrast(103%);
 }
 
-   /*scroll bar*/
+ /*scroll bar*/
 
     /* Customize the scrollbar */
     ::-webkit-scrollbar {
-        width: 5px; /* Width of the scrollbar */
+        width: 0px; /* Width of the scrollbar */
       }
       
       /* Track */
@@ -251,16 +251,6 @@ a:hover{
       ::-webkit-scrollbar-thumb:hover {
         background: #313131; /* Color of the scroll handle on hover */
       }
-
-
-
-
-     #queryInput{
-        height: 47px;
-        border-radius: 5px;
-        border:1px solid #b3b3b3 ;
-        text-indent: 24px;
-    }
     .butn{
         font-size: 17px;
         border: none;
@@ -272,3 +262,81 @@ a:hover{
         margin-left: 0px;
         padding-top: 5px;
        }
+
+/* inserted styles from the chatGPT  things */
+#user-input{
+    border: 0px;
+    background-color: transparent;
+    width: 54vw;
+    margin: 4px;
+    padding: 2px;
+    color: #f1f1f1;
+    height: 47px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    text-indent: 24px;
+}
+
+/* Chat container styling */
+.chat-container {
+    width: 100%;
+    margin: 5px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    overflow-y: hidden;
+    height: 65vh;
+    margin-bottom: 10vh;
+}
+      .chat-input{
+        border: 0px;
+        border-radius: 5px;
+        background-color: #3b3b3b;
+        height: 60px;
+        display: flex;
+      }
+      /* Message container styling (general) */
+      .message {
+        padding: 0.625em;
+        border-radius: 1em;
+        margin-bottom: 0.625em;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        width: 65vw;
+      }
+  
+      /* User message styling */
+      .user-message {
+        background-color: lightblue;
+        color: black;
+      }
+  
+      /* Bot message styling */
+      .bot-message {
+        background-color: lightgray;
+        color: black;
+      }
+  
+      /* Message sender styling */
+      .message-sender {
+        font-weight: bold;
+      }
+  
+      /* Message text styling */
+      .message-text {
+        flex-grow: 1;
+      }
+  
+      /* Typing effect styling */
+      .typing::after {
+        content: '|';
+        animation: blink-caret 0.75s infinite;
+      }
+  
+      @keyframes blink-caret {
+        50% {
+          opacity: 0;
+        }
+      }
