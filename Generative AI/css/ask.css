@@ -264,9 +264,13 @@ a:hover{
 
 /* inserted styles from the chatGPT  things */
 #user-input{
-    margin-top: 5px;
-    margin-left: 2px; 
-    height: 25px;
+    border: 0px;
+    background-color: transparent;
+    width: 54vw;
+    height: 30px;  
+    margin: 4px;
+    padding: 2px;
+    color: #f1f1f1;
 }
 
 /* Chat container styling */
