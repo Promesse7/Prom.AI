@@ -271,12 +271,12 @@ a:hover{
 /* Chat container styling */
 .chat-container {
     width: 80vh;
-    margin: 0 auto;
+    margin: 5px;
     border: 0px;
     padding: 10px;
     border-radius: 10px;
     background-color: transparent;
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: 65vh;
     margin-bottom: 10vh;
 }
@@ -293,7 +293,6 @@ a:hover{
         border-radius: 1em;
         margin-bottom: 0.625em;
         display: flex;
-        flex-direction: column;
         color: #fff;
         width: 60vw;
       }
