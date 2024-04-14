@@ -267,10 +267,13 @@ a:hover{
     border: 0px;
     background-color: transparent;
     width: 54vw;
-    height: 30px;  
     margin: 4px;
     padding: 2px;
     color: #f1f1f1;
+    height: 47px;
+    border-radius: 5px;
+    border: 1px solid #b3b3b3;
+    text-indent: 24px;
 }
 
 /* Chat container styling */
