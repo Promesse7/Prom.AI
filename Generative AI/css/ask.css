@@ -250,16 +250,6 @@ a:hover{
       ::-webkit-scrollbar-thumb:hover {
         background: #313131; /* Color of the scroll handle on hover */
       }
-
-
-
-
-     #queryInput{
-        height: 47px;
-        border-radius: 5px;
-        border:1px solid #b3b3b3 ;
-        text-indent: 24px;
-    }
     .butn{
         font-size: 17px;
         border: none;
@@ -284,7 +274,7 @@ a:hover{
     border-radius: 10px;
     background-color: transparent;
     overflow-y: scroll;
-    max-height: 80vh;
+    max-height: 65vh;
     margin-bottom: 10vh;
 }
       .chat-input{
@@ -292,9 +282,12 @@ a:hover{
       }
       /* Message container styling (general) */
       .message {
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 5px;
+        padding: 0.625em;
+        border-radius: 1em;
+        margin-bottom: 0.625em;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
       }
   
       /* User message styling */
