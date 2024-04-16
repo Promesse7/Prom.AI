@@ -175,5 +175,120 @@ b{
     }
 }
 
+/* Responsive CSS for iPhone 15 Pro Max */
+
+@media only screen and (max-width: 428px) {
+    body {
+        background: url(/Photos-001/index-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-color: rgb(14, 19, 32);
+    }
+
+    /* topbar starts here */
+    nav.topbar {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        justify-content: space-around;
+        background-color: rgb(14, 19, 32);
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .top1 {
+        display: flex;
+        margin-left: 2vw;
+        margin-right: 5vw;
+    }
+
+    .top1 h1 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .top7 {
+        margin-right: 7vw;
+    }
+
+    .top8 button {
+        border: #58b908 1px solid;
+        outline: 0;
+        border-radius: 5px;
+        height: 25px;
+        width: 90px;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    /* topbar ends here */
+
+    /* middle-container starts here */
+    .middle-container {
+        margin: 10vh 2.5vw 2.5vh 2.5vw;
+        width: 90vw;
+        display: block;
+    }
+
+    .description {
+        color: #fff;
+        padding-top: 5vh;
+    }
+
+    .description p {
+        word-wrap: break-word;
+    }
+
+    .landing {
+        color: #58b908;
+        font-family: Cambria, Cochin, Georgia, Times, serif;
+        font-weight: lighter;
+        padding-left: 2.5vw;
+    }
+
+    .AI {
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .boxes {
+        margin-right: 6vw;
+    }
+
+    .windows {
+        border-right: 0;
+        margin-top: 5vh;
+        padding: 5px;
+        font-size: 10px;
+        font-weight: lighter;
+        width: 12vw;
+        color: #58b908;
+    }
+
+    .button {
+        width: 70vw;
+        height: 6vh;
+        text-align: center;
+        color: black;
+        background-color: #58b908;
+        border: 0;
+        outline: 0;
+        padding-top: 5px;
+        border-radius: 8px;
+    }
+
+    .button a {
+        color: #fff;
+    }
+
+    b {
+        font-size: 20px;
+        font-weight: lighter;
+        color: rgb(119, 115, 115);
+    }
+    /* middle-container ends here */
+}
 
     /*   responsiveness ends here   */
