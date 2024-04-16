@@ -340,3 +340,84 @@ a:hover{
           opacity: 0;
         }
       }
+      /* For devices with a maximum width of 880px and a minimum width of 480px */
+@media (max-width: 880px) and (min-width: 480px) {
+    /* Adjustments for the body */
+    body {
+        overflow: auto; /* Restore overflow */
+    }
+
+    /* Adjustments for the container */
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    /* Adjustments for the first_nav */
+    nav.first_nav {
+        height: auto; /* Allow height to adjust dynamically */
+        width: 100%; /* Take full width */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .icon_st img {
+        margin-top: 0; /* Remove margin */
+    }
+    .icon_th {
+        margin: 10px auto; /* Center align icons */
+    }
+    .sep {
+        display: none; /* Hide separator */
+    }
+
+    /* Adjustments for the second_nav */
+    nav.second_nav {
+        width: 100%; /* Take full width */
+        height: auto; /* Allow height to adjust dynamically */
+        overflow: auto; /* Enable scrolling */
+    }
+    .directive_search input {
+        width: 100%; /* Take full width */
+    }
+    .directive {
+        margin-top: 10px; /* Increase margin */
+    }
+
+    /* Adjustments for the main_view */
+    nav.main_view {
+        width: 100%; /* Take full width */
+        height: auto; /* Allow height to adjust dynamically */
+        overflow: auto; /* Enable scrolling */
+    }
+    .top-description {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        margin-bottom: 10px; /* Increase margin */
+    }
+    .btn {
+        margin-left: 0; /* Remove margin */
+        margin-top: 10px; /* Increase margin */
+    }
+    .chat-container {
+        height: 50vh; /* Reduce height */
+        overflow-y: auto; /* Enable scrolling */
+        margin-bottom: 5vh; /* Reduce margin */
+    }
+    .chat-input {
+        height: auto; /* Allow height to adjust dynamically */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center align content */
+    }
+    #user-input {
+        width: 100%; /* Take full width */
+        margin: 10px auto; /* Center align input */
+    }
+    .span-container {
+        justify-content: center; /* Center align buttons */
+    }
+    .span-container button {
+        margin: 5px; /* Adjust margin */
+    }
+}

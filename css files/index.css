@@ -129,62 +129,51 @@ b{
 
 /* middle-container ends here */
 
-
-    /*   responsiveness starts here   */
-    @media  (max-width: 880px) and (min-width: 480px){
-        body{
-            height: 100vh;
-            background-color: rgb(14, 19, 32);
-            }  
-            nav.topbar{
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: #fff;
-                justify-content: space-around;
-                background-color:rgb(14, 19, 32) ;
-                padding-top: 0.5%;
-                padding-bottom: 0.5%;
-            }
-            .topbar h1{
-                font-size: 12px;
-                font-weight: 100;
-                cursor: pointer;
-            }
-            .top1{
-                margin-right: 8vw;
-            }
-            .top7{
-                margin-right: 9vw;
-            }
-            .top4,.top6{
-                width: 0px;
-                height: 0px;
-              display: none;
-            }
-            .top8 button{
-                height: 25px;
-                width: 100px;
-            }
-/* topbar ends here */
-
-
-/* middle-container starts here */
-    .middle-container{
-          margin: 5vh 2.5vw 2.5vh 2.5vw;
-          width: 100vw;
-          display: block;
+/* For devices with a max-width of 880px and a min-width of 480px */
+@media (max-width: 880px) and (min-width: 480px) {
+    /* Adjustments for the body */
+    body {
+        height: auto; /* Remove fixed height */
+        background-color: rgb(14, 19, 32);
     }
-    .description{
-       padding-top: 5vh;
+
+    /* Adjustments for the topbar */
+    nav.topbar {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px 0; /* Increase padding */
     }
-    .landing{
+    .topbar h1 {
+        font-size: 12px;
+    }
+    .top1 {
+        margin: 0; /* Reset margin */
+    }
+    .top7 {
+        margin: 0; /* Reset margin */
+    }
+    .top4, .top6 {
+        display: none; /* Hide these elements */
+    }
+    .top8 button {
+        height: 25px;
+        width: 100px;
+    }
+
+    /* Adjustments for the middle-container */
+    .middle-container {
+        margin: 5vh 2.5vw 2.5vh 2.5vw;
+        width: calc(100vw - 5vw); /* Adjust width */
+    }
+    .description {
+        padding-top: 5vh;
+    }
+    .landing {
         padding-left: 2.5vw;
     }
-    .boxes{
+    .boxes {
         margin-right: 6vw;
     }
+}
 
-    }
 
     /*   responsiveness ends here   */
