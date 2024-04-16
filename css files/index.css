@@ -125,3 +125,49 @@ b{
 }
 
 /* middle-container ends here */
+
+/* For devices with a max-width of 880px and a min-width of 480px */
+@media (max-width: 880px) and (min-width: 480px) {
+    /* Adjustments for the body */
+    body {
+        height: auto; /* Remove fixed height */
+        background-color: rgb(14, 19, 32);
+    }
+
+    /* Adjustments for the topbar */
+    nav.topbar {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px 0; /* Increase padding */
+    }
+    .topbar h1 {
+        font-size: 12px;
+    }
+    .top1 {
+        margin: 0; /* Reset margin */
+    }
+    .top7 {
+        margin: 0; /* Reset margin */
+    }
+    .top4, .top6 {
+        display: none; /* Hide these elements */
+    }
+    .top8 button {
+        height: 25px;
+        width: 100px;
+    }
+
+    /* Adjustments for the middle-container */
+    .middle-container {
+        margin: 5vh 2.5vw 2.5vh 2.5vw;
+        width: calc(100vw - 5vw); /* Adjust width */
+    }
+    .description {
+        padding-top: 5vh;
+    }
+    .landing {
+        padding-left: 2.5vw;
+    }
+    .boxes {
+        margin-right: 6vw;
+    }
+}
