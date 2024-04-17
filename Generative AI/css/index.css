@@ -351,7 +351,8 @@ a:hover{
         background-color: rgb(14, 19, 32);
         overflow:hidden;
     }
-    .first-nav,.second_nav{
+    .first-nav,.second_nav,.top-description,.separator{
         display: none;
     }
+
 }
