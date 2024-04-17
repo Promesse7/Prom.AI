@@ -354,5 +354,8 @@ a:hover{
     .first-nav,.second_nav,.top-description,.separator{
         display: none;
     }
-
+.main_view{
+    width: 100vw;
+    height: 100vh;
+}
 }
