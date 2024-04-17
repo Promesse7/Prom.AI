@@ -64,8 +64,10 @@ input{
     background-color: #ffffff10;
     border: 0;
     border-radius: 5px;
+    margin-left:10px;
     outline: none;
     margin-top: 5px;
+    padding-left:10px;
     color: #fff;
 }
 .button{
@@ -230,7 +232,7 @@ input {
     }
     input, .button, .with {
         width: 80vw;
-
+        margin-left: 10px;
     }
     .Welcome {
         font-size: medium;
