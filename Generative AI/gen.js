@@ -54,10 +54,10 @@ const handleUserInput = () => {
       if (i < responseText.length) {
         messageText.textContent += responseText[i];
         i++;
+        targetElement.scrollTop = targetElement.scrollHeight;
         setTimeout(typingLoop, 50);
       } else {
         messageText.classList.remove("typing");
-        targetElement.scrollTop = targetElement.scrollHeight;
       }
     };
 
@@ -72,8 +72,9 @@ const handleUserInput = () => {
       <div class="message-sender">${sender}</div>
       <div class="message-text">${text}</div>
     `;
+    chatContainer.scrollTop = chatContainer.scrollHeight
     chatContainer.appendChild(message);
-    chatContainer.scrollTop = chatContainer.scrollHeight;
+   
   };
 
   document.getElementById("send-button").addEventListener("click", handleUserInput);
