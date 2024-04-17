@@ -200,6 +200,7 @@ input {
     outline: none;
     color: black;
     border-radius: 5px;
+    margin-left:5px;
 }
 .with:hover {
     background-color: #58b908;
@@ -221,6 +222,7 @@ input {
         margin-right:2px;
         padding:4px;
         margin-top:2.5vh;
+        margin-bottom:3.5vh;
     }
     .name h1 {
         display: none;
@@ -228,6 +230,7 @@ input {
     }
     input, .button, .with {
         width: 80vw;
+
     }
     .Welcome {
         font-size: medium;
