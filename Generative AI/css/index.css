@@ -358,4 +358,7 @@ a:hover{
     width: 100vw;
     height: 100vh;
 }
+.icon_th,.sep,.icon_st,.upload,.send-question,.record{
+    display: none;
+}
 }
