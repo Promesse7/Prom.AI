@@ -184,6 +184,7 @@ b{
         background-repeat: no-repeat;
         height: 100vh;
         background-color: rgb(14, 19, 32);
+        overflow:hidden;
     }
 
     /* topbar starts here */
@@ -255,7 +256,7 @@ b{
     }
 
     .AI {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 900;
         text-align:center;
     }
@@ -271,7 +272,7 @@ b{
         padding: 5px;
         font-size: 10px;
         font-weight: lighter;
-        width: 12vw;
+        width: auto;
         color: #58b908;
     }
 
@@ -285,7 +286,7 @@ b{
         outline: 0;
         padding-top: 5px;
         border-radius: 8px;
-        margin-left:20vh;
+        margin-left:8vw;
     }
 
     .button a {
