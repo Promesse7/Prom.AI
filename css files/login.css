@@ -215,10 +215,10 @@ input {
     }
     .form-container {
         width: 87vw; /* adjust width for smaller screens */
-        height: 95vh;
+        height: 90vh;
         float: none;
-        margin: 3px;
-        margin-top: 0vh;
+        margin:0 2px;
+        padding:2px;
     }
     .name h1 {
         display: none;
