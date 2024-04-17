@@ -276,6 +276,7 @@ b{
         font-weight: lighter;
         width: auto;
         color: #58b908;
+        text-align:center;
     }
 
     .button {

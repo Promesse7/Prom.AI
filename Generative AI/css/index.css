@@ -421,3 +421,60 @@ a:hover{
         margin: 5px; /* Adjust margin */
     }
 }
+
+/* Base styles are already defined, we add responsive adjustments below */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .first_nav, .second_nav {
+        width: 15vw; /* Increase width for better tap targets */
+    }
+    .main_view {
+        width: 70vw;
+    }
+    .directive_search input, #user-input {
+        width: 30vw; /* Adjust search/input box width */
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Stack navigation bars vertically */
+    }
+    .first_nav, .second_nav {
+        width: 100%; /* Full width navigation bars */
+        height: auto;
+    }
+    .main_view {
+        width: 100%;
+    }
+    .directive_search input, #user-input {
+        width: 80vw; /* Adjust search/input box width */
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+    .container {
+        flex-direction: column; /* Ensure vertical stacking for very small screens */
+    }
+    .first_nav, .second_nav {
+        width: 100%;
+        height: auto;
+    }
+    .main_view {
+        width: 100%;
+        padding: 10px; /* Reduced padding */
+    }
+    .directive_search input, #user-input {
+        width: 90vw; /* Make input fields take most of the screen width */
+    }
+    .btn, .butn, .btn-text {
+        width: 100%; /* Full width buttons for better accessibility */
+    }
+    .directive h3 {
+        font-size: medium; /* Adjust font size */
+    }
+}
+
