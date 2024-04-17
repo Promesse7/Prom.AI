@@ -340,4 +340,18 @@ a:hover{
           opacity: 0;
         }
       }
-    
+     
+      /* Responsive CSS for iPhone 15 Pro Max */
+
+@media only screen and (max-width: 428px) {
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-color: rgb(14, 19, 32);
+        overflow:hidden;
+    }
+    .first-nav,.second_nav{
+        display: none;
+    }
+}
