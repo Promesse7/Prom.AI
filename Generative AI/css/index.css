@@ -407,55 +407,54 @@ a:hover{
 }
 
 
-/* Base styles are already defined, we add responsive adjustments below */
+/* Base styles should already be in place. This is a specific tweak for the iPhone 15 Pro */
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+/* iPhone 15 Pro Portrait */
+@media only screen 
+  and (device-width: 393px) 
+  and (device-height: 852px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
     .first_nav, .second_nav {
-        display:none; /* Increase width for better tap targets */
+        display:none; 
     }
     .main_view {
-        width: 100vw;
-        height:100vh;
+        padding: 15px;
+        width: 100%; /* Use the full width */
+        box-sizing: border-box; /* Includes padding and border in the width */
     }
     .directive_search input, #user-input {
-        width: 30vw; /* Adjust search/input box width */
-    }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
-    .container {
-        flex-direction: column; /* Stack navigation bars vertically */
-    }
-    .first_nav, .second_nav {
-        display:none;
-    }
-    .main_view {
-        width: 100vw;
-        height:100vh;
-    }
-
-}
-
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575px) {
-    .container {
-        flex-direction: column; /* Ensure vertical stacking for very small screens */
-    }
-    .first_nav, .second_nav {
-        display: none;
-    }
-    .main_view {
-        width: 100vw;
-        height:100vh;
-        padding: 5px; /* Reduced padding */
+        width: 85%; /* Slightly reduce width to accommodate padding/margins */
+        margin: auto; /* Center align the input fields */
     }
     .btn, .butn, .btn-text {
-        width: 100%; /* Full width buttons for better accessibility */
+        width: 90%; /* Optimized button width */
+        padding: 10px 0; /* More tap-friendly */
+        font-size: 16px; /* Larger text for easier reading */
     }
-    .directive h3 {
-        font-size: medium; /* Adjust font size */
+}
+
+/* iPhone 15 Pro Landscape */
+@media only screen 
+  and (device-width: 852px) 
+  and (device-height: 393px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+    }
+    .first_nav, .second_nav {
+       display:none; 
+    }
+    .main_view {
+        width: 75%; /* Larger main view */
+    }
+    .directive_search input, #user-input {
+        width: 70%; /* Adjust width for landscape orientation */
+    }
+    .btn, .butn, .btn-text {
+        width: auto;
+        padding: 8px 10px;
     }
 }
 
