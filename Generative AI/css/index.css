@@ -384,7 +384,7 @@ a:hover{
 /* my scroll to top button */
 .mybtn{
     bottom: 20px;
-    right: 30px;
+    right: 50vw;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -392,7 +392,7 @@ a:hover{
     background-color: rgb(65, 65, 65);
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 5px;
     border-radius: 4px;
     scroll-behavior: smooth;
   }
