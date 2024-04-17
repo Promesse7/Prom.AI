@@ -409,3 +409,61 @@ a:hover{
 
 /* Base styles should already be in place. This is a specific tweak for the iPhone 15 Pro */
 
+/* Base styles for mobile */
+.first_nav, .second_nav {
+    display: none;
+}
+.main_view {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.directive_search input, #user-input {
+    width: 85%;
+    margin: auto;
+}
+.btn, .butn, .btn-text {
+    width: 90%;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+/* Adjustments for higher-resolution devices */
+@media only screen 
+  and (min-device-pixel-ratio: 2.5),
+  only screen 
+  and (min-resolution: 240dpi) {
+    display: none;     
+    .main_view {
+        padding: 15px; /* More padding for high DPI devices */
+    }
+    .directive_search input, #user-input {
+        width: 80%; /* Optimized width */
+    }
+    .btn, .butn, .btn-text {
+        padding: 10px 0; /* Responsive padding */
+        font-size: 16px; /* Readability on high DPI screens */
+    }
+}
+
+/* Landscape orientations */
+@media only screen 
+  and (min-device-pixel-ratio: 2.5) 
+  and (orientation: landscape) {
+    .container {
+        flex-direction: row; /* Change layout in landscape */
+    }
+    .first_nav, .second_nav {
+        display: none;
+    }
+    .main_view {
+        width: 75%; /* Adjust main view */
+    }
+    .directive_search input, #user-input {
+        width: 70%; /* Landscape width */
+    }
+    .btn, .butn, .btn-text {
+        width: auto;
+        padding: 8px 10px;
+    }
+}
