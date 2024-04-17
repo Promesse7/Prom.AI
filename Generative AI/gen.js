@@ -100,7 +100,7 @@ if (mainViewDiv) {
   const observer = new ResizeObserver(entries => {
       for (let entry of entries) {
           if (entry.target === mainViewDiv) {
-              scrollToTop(); // Scroll to top when height changes
+              // Do nothing here, scroll only when button is clicked
           }
       }
   });
@@ -108,5 +108,10 @@ if (mainViewDiv) {
   observer.observe(mainViewDiv);
 }
 
-  observer.observe(mainViewDiv);
+// Add click event listener to the button
+const scrollToTopButton = document.getElementById('myBtn');
+if (scrollToTopButton) {
+  scrollToTopButton.addEventListener('click', () => {
+      scrollToTop(); // Scroll to top when the button is clicked
+  });
 }
