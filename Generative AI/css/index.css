@@ -384,7 +384,7 @@ a:hover{
 /* my scroll to top button */
 .mybtn{
     bottom: 20px;
-    right: 50vw;
+    margin-right: 50vw;
     z-index: 99;
     font-size: 18px;
     border: none;
