@@ -410,7 +410,10 @@ a:hover{
 /* Base styles should already be in place. This is a specific tweak for the iPhone 15 Pro */
 
 /* Base styles for mobile */
-.first_nav, .second_nav {
+.first_nav{
+    display: none;
+} 
+.second_nav {
     display: none;
 }
 .main_view {
@@ -418,7 +421,7 @@ a:hover{
     width: 100%;
     box-sizing: border-box;
 }
-.directive_search input, #user-input {
+#user-input {
     width: 85%;
     margin: auto;
 }
@@ -437,12 +440,18 @@ a:hover{
     .main_view {
         padding: 15px; /* More padding for high DPI devices */
     }
-    .directive_search input, #user-input {
+    #user-input {
         width: 80%; /* Optimized width */
     }
     .btn, .butn, .btn-text {
         padding: 10px 0; /* Responsive padding */
         font-size: 16px; /* Readability on high DPI screens */
+    }
+    .first_nav{
+        display: none;
+    } 
+    .second_nav {
+        display: none;
     }
 }
 
@@ -453,7 +462,10 @@ a:hover{
     .container {
         flex-direction: row; /* Change layout in landscape */
     }
-    .first_nav, .second_nav {
+    .first_nav{
+        display: none;
+    } 
+    .second_nav {
         display: none;
     }
     .main_view {
