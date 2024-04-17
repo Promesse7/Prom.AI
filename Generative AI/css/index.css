@@ -382,7 +382,7 @@ a:hover{
 
 
 /* my scroll to top button */
-.myBtn{
+.mybtn{
     display: none;
     position: fixed;
     bottom: 20px;
