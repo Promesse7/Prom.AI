@@ -88,14 +88,14 @@ const handleUserInput = () => {
 
 // Function to scroll main-view div to top
 function scrollToTop() {
-  const mainViewDiv = document.getElementById('main-view');
+  const mainViewDiv = document.getElementById('chat-container');
   if (mainViewDiv) {
       mainViewDiv.scrollTop = 0;
   }
 }
 
 // Observer to detect changes in main-view div's height
-const mainViewDiv = document.getElementById('main-view');
+const mainViewDiv = document.getElementById('chat-container');
 if (mainViewDiv) {
   const observer = new ResizeObserver(entries => {
       for (let entry of entries) {
