@@ -215,9 +215,9 @@ input {
     }
     .form-container {
         width: 87vw; /* adjust width for smaller screens */
-        height: 99vh;
+        height: 97vh;
         float: none;
-        margin: 0;
+        margin: 30px;
         margin-top: 0vh;
     }
     .name h1 {
