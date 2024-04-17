@@ -344,7 +344,7 @@ a:hover{
 @media (max-width: 880px) and (min-width: 480px) {
     /* Adjustments for the body */
     body {
-        overflow: auto; /* Restore overflow */
+        overflow: hidden; 
     }
 
     /* Adjustments for the container */
@@ -354,44 +354,26 @@ a:hover{
 
     /* Adjustments for the first_nav */
     nav.first_nav {
-        height: auto; /* Allow height to adjust dynamically */
-        width: 100%; /* Take full width */
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
         display: none;
     }
     .icon_st img {
-        margin-top: 0; /* Remove margin */
+        display: none;
     }
     .icon_th {
         margin: 10px auto; /* Center align icons */
     }
-    .sep {
-        display: none; /* Hide separator */
-    }
+   
 
     /* Adjustments for the second_nav */
     nav.second_nav {
-        width: 100%; /* Take full width */
-        height: auto; /* Allow height to adjust dynamically */
-        overflow: auto; /* Enable scrolling */
         display: none;
-    }
-    .directive_search input {
-        width: 100%; /* Take full width */
-    }
-    .directive {
-        margin-top: 10px; /* Increase margin */
     }
 
     /* Adjustments for the main_view */
     nav.main_view {
         width: 100%; /* Take full width */
-        height: auto; /* Allow height to adjust dynamically */
-        overflow: auto; /* Enable scrolling */
+        height: 100vh; /* Allow height to adjust dynamically */
+        overflow: 100vw; /* Enable scrolling */
     }
     .top-description {
         flex-direction: flex; /* Stack elements vertically */
@@ -430,10 +412,11 @@ a:hover{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
     .first_nav, .second_nav {
-        width: 15vw; /* Increase width for better tap targets */
+        display:none; /* Increase width for better tap targets */
     }
     .main_view {
-        width: 70vw;
+        width: 100vw;
+        height:100vh;
     }
     .directive_search input, #user-input {
         width: 30vw; /* Adjust search/input box width */
@@ -446,16 +429,13 @@ a:hover{
         flex-direction: column; /* Stack navigation bars vertically */
     }
     .first_nav, .second_nav {
-        width: 100%; /* Full width navigation bars */
-        height: auto;
         display:none;
     }
     .main_view {
         width: 100vw;
+        height:100vh;
     }
-    .directive_search input, #user-input {
-        width: 80vw; /* Adjust search/input box width */
-    }
+
 }
 
 /* Extra small devices (phones, less than 576px) */
@@ -464,16 +444,12 @@ a:hover{
         flex-direction: column; /* Ensure vertical stacking for very small screens */
     }
     .first_nav, .second_nav {
-        width: 100%;
-        height: auto;
         display: none;
     }
     .main_view {
         width: 100vw;
+        height:100vh;
         padding: 5px; /* Reduced padding */
-    }
-    .directive_search input, #user-input {
-        width: 90vw; /* Make input fields take most of the screen width */
     }
     .btn, .butn, .btn-text {
         width: 100%; /* Full width buttons for better accessibility */
