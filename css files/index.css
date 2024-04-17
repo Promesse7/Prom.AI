@@ -251,16 +251,18 @@ b{
         color: #58b908;
         font-family: Cambria, Cochin, Georgia, Times, serif;
         font-weight: lighter;
-        padding-left: 2.5vw;
+        margin-left: 12.5vw;
     }
 
     .AI {
         font-size: 35px;
         font-weight: 900;
+        text-align:center;
     }
 
     .boxes {
         margin-right: 6vw;
+        display:flex;
     }
 
     .windows {
@@ -283,6 +285,7 @@ b{
         outline: 0;
         padding-top: 5px;
         border-radius: 8px;
+        margin-left:20vh;
     }
 
     .button a {
