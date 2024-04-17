@@ -107,3 +107,6 @@ if (mainViewDiv) {
 
   observer.observe(mainViewDiv);
 }
+
+  observer.observe(mainViewDiv);
+}
