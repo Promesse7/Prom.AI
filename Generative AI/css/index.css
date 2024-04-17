@@ -356,13 +356,6 @@ a:hover{
     nav.first_nav {
         display: none;
     }
-    .icon_st img {
-        display: none;
-    }
-    .icon_th {
-        margin: 10px auto; /* Center align icons */
-    }
-   
 
     /* Adjustments for the second_nav */
     nav.second_nav {
@@ -371,9 +364,9 @@ a:hover{
 
     /* Adjustments for the main_view */
     nav.main_view {
-        width: 100%; /* Take full width */
+        width: 100vw /* Take full width */
         height: 100vh; /* Allow height to adjust dynamically */
-        overflow: 100vw; /* Enable scrolling */
+        overflow:hidden; /* Enable scrolling */
     }
     .top-description {
         flex-direction: flex; /* Stack elements vertically */
@@ -462,14 +455,14 @@ a:hover{
     .container {
         flex-direction: row; /* Change layout in landscape */
     }
-    .first_nav{
+    nav.first_nav{
         display: none;
     } 
     .second_nav {
         display: none;
     }
     .main_view {
-        width: 75%; /* Adjust main view */
+        width: 100vw; /* Adjust main view */
     }
     .directive_search input, #user-input {
         width: 70%; /* Landscape width */
