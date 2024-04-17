@@ -214,10 +214,11 @@ input {
         overflow: hidden;
     }
     .form-container {
-        width: 87vw; /* adjust width for smaller screens */
+        width: 95vw; /* adjust width for smaller screens */
         height: 90vh;
         float: none;
-        margin:0 2px;
+        margin-left:2px;
+        margin-right:2px;
         padding:2px;
     }
     .name h1 {
