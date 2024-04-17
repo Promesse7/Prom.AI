@@ -209,6 +209,10 @@ b{
         font-size: 12px;
         font-weight: 500;
     }
+    .top4,.top6,.top5{
+        content='';
+        size=0;
+    }
 
     .top7 {
         margin-right: 5vw;
