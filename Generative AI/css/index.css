@@ -361,4 +361,7 @@ a:hover{
 .icon_th,.sep,.icon_st,.upload,.send-question,.record{
     display: none;
 }
+input{
+    width: 80vw;
+}
 }
