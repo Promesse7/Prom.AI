@@ -285,7 +285,7 @@ a:hover{
     padding: 10px;
     border-radius: 10px;
     background-color: transparent;
-    overflow-y: hidden;
+    overflow-x: hidden;
     height: 65vh;
     margin-bottom: 10vh;
 }
