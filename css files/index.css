@@ -196,6 +196,7 @@ b{
         background-color: rgb(14, 19, 32);
         padding-top: 0.5%;
         padding-bottom: 0.5%;
+        font-size: 10px;;
     }
 
     .top1 {
@@ -205,22 +206,24 @@ b{
     }
 
     .top1 h1 {
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 500;
     }
 
     .top7 {
-        margin-right: 7vw;
+        margin-right: 5vw;
     }
 
     .top8 button {
         border: #58b908 1px solid;
         outline: 0;
         border-radius: 5px;
-        height: 25px;
-        width: 90px;
+        height: 20px;
+        width: 70px;
         color: #fff;
         background-color: transparent;
+        font-size:10px;
+
     }
 
     /* topbar ends here */
