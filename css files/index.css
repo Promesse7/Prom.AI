@@ -210,8 +210,7 @@ b{
         font-weight: 500;
     }
     .top4,.top6,.top5{
-        content='';
-        size=0;
+        display:none;
     }
 
     .top7 {
