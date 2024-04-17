@@ -215,8 +215,8 @@ input {
     }
     .form-container {
         width: 95vw; /* adjust width for smaller screens */
-        height: 90vh;
-        float: none;
+        height: 95vh;
+        float: center;
         margin-left:2px;
         margin-right:2px;
         padding:2px;
