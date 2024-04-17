@@ -210,8 +210,12 @@ input {
 
 /* Media Queries for Responsive Adjustments */
 @media (max-width: 768px) {
+    body{
+        overflow: hidden;
+    }
     .form-container {
-        width: 100vw; /* adjust width for smaller screens */
+        width: 90vw; /* adjust width for smaller screens */
+        height: 100vh;
         float: none;
         margin: 0;
         margin-top: 0vh;
