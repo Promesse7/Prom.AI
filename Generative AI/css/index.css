@@ -361,6 +361,7 @@ a:hover{
         justify-content: center;
         align-items: center;
         padding: 10px;
+        display: none;
     }
     .icon_st img {
         margin-top: 0; /* Remove margin */
@@ -377,6 +378,7 @@ a:hover{
         width: 100%; /* Take full width */
         height: auto; /* Allow height to adjust dynamically */
         overflow: auto; /* Enable scrolling */
+        display: none;
     }
     .directive_search input {
         width: 100%; /* Take full width */
@@ -392,7 +394,7 @@ a:hover{
         overflow: auto; /* Enable scrolling */
     }
     .top-description {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: flex; /* Stack elements vertically */
         align-items: center; /* Center align items */
         margin-bottom: 10px; /* Increase margin */
     }
@@ -421,6 +423,7 @@ a:hover{
         margin: 5px; /* Adjust margin */
     }
 }
+
 
 /* Base styles are already defined, we add responsive adjustments below */
 
