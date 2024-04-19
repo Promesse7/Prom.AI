@@ -386,6 +386,11 @@ a:hover{
   .span-container{
     margin-left: 2vw;
   }
+  .butn{
+    font-size: 12px;
+    border-radius: 2.5px;
+    padding: 5px 10px;
+   }
 
 }
 
