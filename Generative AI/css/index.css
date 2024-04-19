@@ -281,7 +281,7 @@ a:hover{
 .chat-container {
     width: 100%;
     border-bottom: none;
-    border:solid #ffff 0.5px;
+    border:0;
     padding: 8px;
     border-radius: 5px;
     background-color: transparent;
