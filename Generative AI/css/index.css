@@ -374,6 +374,10 @@ a:hover{
     border: 1px solid #b3b3b3;
     text-indent: 24px;
 }
+.chat-container {
+    border-left: solid #fff 0.2px;
+    border-right: solid #fff 0.2px;
+}
 
 
 
