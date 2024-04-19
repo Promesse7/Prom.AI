@@ -263,7 +263,6 @@ a:hover{
         padding-top: 5px;
        }
 
-/* inserted styles from the chatGPT  things */
 #user-input{
     border: 0px;
     background-color: transparent;
@@ -277,7 +276,7 @@ a:hover{
     text-indent: 24px;
 }
 
-/* Chat container styling */
+
 .chat-container {
     width: 100%;
     border-bottom: none;
@@ -383,6 +382,9 @@ a:hover{
     height: 60px;
     width: 80vw;
     display: flex;
+  }
+  .span-container{
+    margin-left: 2vw;
   }
 
 }
