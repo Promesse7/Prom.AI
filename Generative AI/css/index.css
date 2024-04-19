@@ -358,6 +358,7 @@ a:hover{
     width: 100vw;
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .icon_th,.sep,.icon_st,.upload,.send-question,.record{
     display: none;
@@ -374,12 +375,15 @@ a:hover{
     border: 1px solid #b3b3b3;
     text-indent: 24px;
 }
-.chat-container {
-    border-left: solid #fff 0.2px;
-    border-right: solid #fff 0.2px;
-}
 
-
+.chat-input{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    height: 60px;
+    width: 80vw;
+    display: flex;
+  }
 
 }
 
