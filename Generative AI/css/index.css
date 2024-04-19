@@ -282,12 +282,12 @@ a:hover{
     width: 100%;
     border-bottom: none;
     border:solid #ffff 0.5px;
-    padding: 15px;
+    padding: 8px;
     border-radius: 5px;
     background-color: transparent;
     overflow-x: hidden;
     height: 65vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
       .chat-input{
         border: 0px;
@@ -385,7 +385,7 @@ a:hover{
 .mybtn{
     bottom: 20px;
     margin-right: 5vw;
-    margin-left: 70vw;
+    margin-left: 400px;
     font-size: 18px;
     border: none;
     outline: none;
