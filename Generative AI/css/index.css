@@ -389,7 +389,7 @@ a:hover{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(65, 65, 65);
+    display: none;
     color: white;
     cursor: pointer;
     padding: 5px;

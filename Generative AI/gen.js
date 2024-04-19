@@ -1,6 +1,6 @@
 const handleUserInput = () => {
     const userInput = document.getElementById("user-input").value.trim().toLowerCase();
-    if (userInput === "") return; // Ignore empty input
+    if (userInput === "") return; 
     appendMessage("You", userInput, "user-message");
     fetchBotResponse(userInput);
           document.getElementById("user-input").value = "";
@@ -10,7 +10,7 @@ const handleUserInput = () => {
     setTimeout(() => {
       const botResponse = generateBotResponse(userInput);
       typeResponseWithEffect(botResponse, "chat-container", "bot-message");
-    }, 500); // Simulate 0.5 seconds delay
+    }, 500); 
   };
 
   const generateBotResponse = (userInput) => {
@@ -24,7 +24,6 @@ const handleUserInput = () => {
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
 
-      // Add more response mappings here
     };
 
     return responses[userInput] || "I'm sorry, I don't understand that question.";
@@ -86,7 +85,7 @@ const handleUserInput = () => {
 
 
 
-// Function to scroll main-view div to top
+
 function scrollToTop() {
   const mainViewDiv = document.getElementById('chat-container');
   if (mainViewDiv) {
@@ -94,13 +93,12 @@ function scrollToTop() {
   }
 }
 
-// Observer to detect changes in main-view div's height
 const mainViewDiv = document.getElementById('chat-container');
 if (mainViewDiv) {
   const observer = new ResizeObserver(entries => {
       for (let entry of entries) {
           if (entry.target === mainViewDiv) {
-              // Do nothing here, scroll only when button is clicked
+              
           }
       }
   });
@@ -108,10 +106,20 @@ if (mainViewDiv) {
   observer.observe(mainViewDiv);
 }
 
-// Add click event listener to the button
 const scrollToTopButton = document.getElementById('myBtn');
 if (scrollToTopButton) {
   scrollToTopButton.addEventListener('click', () => {
-      scrollToTop(); // Scroll to top when the button is clicked
+      scrollToTop(); 
   });
+}
+
+mainViewDiv.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var button = document.getElementById("myBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
 }
