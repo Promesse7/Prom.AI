@@ -280,10 +280,10 @@ a:hover{
 /* Chat container styling */
 .chat-container {
     width: 100%;
-    margin: 5px;
-    border:solid #ffff 1px;
-    padding: 10px;
-    border-radius: 10px;
+    border-bottom: none;
+    border:solid #ffff 0.5px;
+    padding: 15px;
+    border-radius: 5px;
     background-color: transparent;
     overflow-x: hidden;
     height: 65vh;
@@ -385,7 +385,7 @@ a:hover{
 .mybtn{
     bottom: 20px;
     margin-right: 5vw;
-    margin-left: 90vw;
+    margin-left: 70vw;
     font-size: 18px;
     border: none;
     outline: none;
