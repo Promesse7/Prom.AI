@@ -51,9 +51,9 @@ const handleUserInput = () => {
     let i = 0;
     const typingLoop = () => {
       if (i < responseText.length) {
+        targetElement.scrollTop = targetElement.scrollHeight;
         messageText.textContent += responseText[i];
         i++;
-        targetElement.scrollTop = targetElement.scrollHeight;
         setTimeout(typingLoop, 50);
       } else {
         messageText.classList.remove("typing");
@@ -117,7 +117,7 @@ mainViewDiv.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   var button = document.getElementById("myBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (mainViewDiv.scrollTop > 20) {
     button.style.display = "block";
   } else {
     button.style.display = "none";
