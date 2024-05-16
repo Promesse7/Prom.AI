@@ -1,4 +1,16 @@
-                     /*----------- topbar starts here --------------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgb(14, 19, 32);
+}
+
+                  /*----------- topbar starts here --------------- */
 
 a{
     text-decoration: none;
@@ -74,6 +86,11 @@ nav.topbar{
   padding: 20px 0;
   font-size: 30px;
 }
+.grid-container img{
+   width: 5vw;
+   height: 5vh;
+   border-radius: 5px;
+}
 .show-off{
     display: flex;
     padding: 20px;
@@ -97,4 +114,28 @@ nav.topbar{
 }
 .enter-prompt input {
    border: none;
+   width: 70vw;
+}
+.right-pane{
+    display:flex;
+    width: 40%;
+    height: 70vh;
+}
+.introduction{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.introduction .visit-ai{
+    width: 2vw;
+    height: 1vh;
+    border:0.5px solid grey;
+    text-align: center;
+    color: rgb(68, 63, 63);
+}
+.introduction .visit-ai:hover{
+    color: #58b908;
+    border: #58b908;
+    cursor: pointer;
 }
