@@ -1,3 +1,55 @@
+                     /*----------- topbar starts here --------------- */
+
+a{
+    text-decoration: none;
+    text-decoration-color: none;
+    color: #58b908;
+    cursor: pointer;
+}
+nav.topbar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    justify-content: space-around;
+    background-color:rgb(14, 19, 32) ;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.topbar a{
+    display: flex;
+}
+.topbar h1{
+    font-size: 15px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.top1{
+    display: flex;
+    margin-left: 2vw;
+    margin-right: 15vw;
+}
+.top1 h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+.top7{
+    margin-right: 19vw;
+}
+.top8 button{
+    border: #58b908 1px solid;
+    outline: 0;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    color: #fff;
+    background-color: transparent;
+}
+
+                    /*-------------- topbar ends here ---------------*/
+
+
 .item1 { grid-area: pic1; }
 .item2 { grid-area: pic2; }
 .item3 { grid-area: pic3; }
@@ -21,4 +73,28 @@
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+.show-off{
+    display: flex;
+    padding: 20px;
+}
+.left-pane{
+    width: 50%;
+    display: block;
+}
+.enter-prompt{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+.generate-btn{
+    width: 20%;
+    background-color: #66d72d;
+    border-radius: 10px;
+    height: 80%;
+}
+.enter-prompt input {
+   border: none;
 }
