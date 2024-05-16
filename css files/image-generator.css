@@ -104,15 +104,17 @@ nav.topbar{
 .left-pane{
     width: 50%;
     display: block;
+    margin-left: 2vw;
 }
 .enter-prompt{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 60vw;
     border-radius: 10px;
     padding: 5px;
     height: 6vh;
     border: 1px solid #fff;
+    margin: 10px;
 }
 .generate-btn{
     width: 20%;
@@ -131,7 +133,7 @@ nav.topbar{
     display:block;
     width: 30vw;
     height: 70vh;
-    margin-left: 20vw;
+    margin-left: 15vw;
     color: #ffff;
 }
 .introduction{
@@ -142,13 +144,14 @@ nav.topbar{
     color: #fff;
 }
 .introduction .visit-ai{
-    margin-left: 43vw;
-    width: 10vw;
-    height: 4vh;
+    margin-left: 42vw;
+    width: 12vw;
+    height: 5vh;
     border:0.5px solid rgb(252, 249, 249);
     text-align: center;
     color: #e7e4e4ec;
     border-radius: 5px;
+    margin: 10px;
 }
 .introduction .visit-ai:hover{
     color: #58b908;
@@ -168,8 +171,8 @@ nav.topbar{
     display: flex;
 }
 .pic-main{
-    width: 20vw;
-   height: 25vh;
+   width: 20vw;
+   height: 52vh;
    border-radius: 5px;
    margin: 10px;
 }
