@@ -20,7 +20,7 @@ const handleUserInput = () => {
       "hey": "Hey!   What can I do for you today?  Is there anything you'd like to ask me or have me do?",
       "how are you": "I'm doing well, thank you! What can I assist you with?",
       "hi": "I'm doing well, thank you! What can I assist you with?",
-      "how are you?": "I'm doing well, thank you! What can I assist you with?",
+      "do you know Diama": "They're a brilliant study partner who challenges me, explains concepts clearly, and keeps our sessions focused and positive.",
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
 
