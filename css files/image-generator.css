@@ -130,7 +130,7 @@ nav.topbar{
    background: transparent;
 }
 .right-pane{
-    display:flex;
+    display:block;
     width: 40%;
     height: 70vh;
 }
@@ -141,8 +141,8 @@ nav.topbar{
     padding: 10px;
 }
 .introduction .visit-ai{
-    width: 2vw;
-    height: 1vh;
+    width: 10vw;
+    height: 4vh;
     border:0.5px solid grey;
     text-align: center;
     color: rgb(68, 63, 63);
@@ -151,4 +151,12 @@ nav.topbar{
     color: #58b908;
     border: #58b908;
     cursor: pointer;
+}
+.contain{
+    height: 15vh;
+    width: 20vw;
+    border:1px solid #4a4949;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 10px;
 }
