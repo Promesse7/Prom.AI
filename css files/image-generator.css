@@ -87,10 +87,19 @@ nav.topbar{
   font-size: 30px;
 }
 .grid-container img{
-   width: 5vw;
-   height: 5vh;
+   width: 20vw;
+   height: 25vh;
    border-radius: 5px;
 }
+.pic1, .pic2, .pic3, .pic4 {
+    grid-column: span 1; 
+}
+
+.pic-main {
+    grid-column: span 2;
+}
+
+
 .show-off{
     display: flex;
     padding: 20px;
@@ -105,16 +114,20 @@ nav.topbar{
     width: 100%;
     border-radius: 10px;
     padding: 5px;
+    height: 6vh;
 }
 .generate-btn{
     width: 20%;
     background-color: #66d72d;
     border-radius: 10px;
     height: 80%;
+    padding: 0 2px 0px 0px;
+    padding-top: 8px;
 }
 .enter-prompt input {
    border: none;
    width: 70vw;
+   background: transparent;
 }
 .right-pane{
     display:flex;
