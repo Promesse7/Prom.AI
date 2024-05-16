@@ -15,8 +15,8 @@ const handleUserInput = () => {
 
   const generateBotResponse = (userInput) => {
     const responses = {
-      "what is the meaning of PromAi": "PromAi is an AI assistant that goes beyond simply answering questions and proactively suggests relevant actions or information based on user behavior and context",
-      "what is PromAi": "PromAi is an AI assistant that goes beyond simply answering questions and proactively suggests relevant actions or information based on user behavior and context",
+      "what is the meaning of promai": "PromAi is an AI assistant that goes beyond simply answering questions and proactively suggests relevant actions or information based on user behavior and context",
+      "what is promai": "PromAi is an AI assistant that goes beyond simply answering questions and proactively suggests relevant actions or information based on user behavior and context",
       "hello": "Hi there! How can I help you today?",
       "Who are you": "I'm PromAi, your direct access to PromTech. I'm trained on large amounts of publicly available data and I can communicate and generate human-like text in response to a wide range of questions. Just try me out and see what I can do for you.",
       "who made you": "I was created by a team of engineers and researchers at PromTech Headquartes.  While Promesse RUKUNDO, PromTech's founder, played a role in the development of PromAi LLMs, it was a collaborative effort!",

@@ -109,6 +109,7 @@ a:active{
 
 .text{
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .top-description{
@@ -230,26 +231,22 @@ a:hover{
     filter: invert(31%) sepia(19%) saturate(2994%) hue-rotate(54deg) brightness(93%) contrast(103%);
 }
 
- /*scroll bar*/
+                              /*---------scroll bar---------*/
 
-    /* Customize the scrollbar */
+    /* Customizing the scrollbar */
+
     ::-webkit-scrollbar {
-        width: 0px; /* Width of the scrollbar */
+        width: 0px; 
       }
-      
-      /* Track */
       ::-webkit-scrollbar-track {
-        background: rgb(17, 21, 32); /* Color of the track */
+        background: rgb(17, 21, 32); 
       }
-      
-      /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #888; /* Color of the scroll handle */
+        background: #888; 
       }
-      
-      /* Handle on hover */
+
       ::-webkit-scrollbar-thumb:hover {
-        background: #313131; /* Color of the scroll handle on hover */
+        background: #313131; 
       }
     .butn{
         font-size: 17px;
@@ -305,30 +302,20 @@ a:hover{
         color: #fff;
         width: 65vw;
       }
-  
-      /* User message styling */
       .user-message {
         background-color: lightblue;
         color: black;
       }
-  
-      /* Bot message styling */
       .bot-message {
         background-color: lightgray;
         color: black;
       }
-  
-      /* Message sender styling */
       .message-sender {
         font-weight: bold;
       }
-  
-      /* Message text styling */
       .message-text {
         flex-grow: 1;
       }
-  
-      /* Typing effect styling */
       .typing::after {
         content: '|';
         animation: blink-caret 0.75s infinite;
@@ -394,9 +381,6 @@ a:hover{
 
 }
 
-
-
-/* my scroll to top button */
 .mybtn{
     bottom: 20px;
     margin-right: 5vw;
@@ -415,3 +399,4 @@ a:hover{
   #myBtn:hover {
     background-color: #dbdbdb;
   }
+  
