@@ -17,6 +17,7 @@ a{
     text-decoration: none;
     text-decoration-color: none;
     cursor: pointer;
+    display: flex;
 }
 
 .form-container{
@@ -29,7 +30,7 @@ a{
     border: 0.2px #fff solid;
     outline: none;
     border-radius: 1.5vh;
-    margin-top: -16vh;
+    margin-top: -10vh;
     padding-left: 5vw;
     margin-right: 2vw;
     padding-right: 5vw;
