@@ -11,7 +11,9 @@ a{
     text-decoration: none;
     text-decoration-color: none;
     cursor: pointer;
+    display: flex;
 }
+
 .title{
     color: #58b908 ;
     border-left: #58b908 2px solid;
@@ -49,7 +51,7 @@ a{
 
  nav.separator{
     display: flex;
-    margin-top: 7.2vw;
+    margin-top: 4.2vw;
     align-self: center;
  }
  .first-line, .second-line{
@@ -64,7 +66,7 @@ a{
 div.circle{
     height: 20px;
     width: 2vw;
-    border-radius: 50%;
+    border-radius: 40%;
     border: #fffdfd 1px solid;
     translate: -50%, -50%;
     border-top: 0;

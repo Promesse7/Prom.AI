@@ -1,6 +1,6 @@
 .container{
     display: block;
-    width: 15vw;
+    width: 20vw;
     height: 20vh;
     padding: 10px;
     text-align: center;
@@ -31,8 +31,8 @@ a{
 .bottom{
     display: flex;
     width: 150vw;
-    margin-left: 15vw;
-    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-top: 4vh;
 }
 .foot{
     margin-top: 3vh;

@@ -12,7 +12,8 @@ background-color: rgb(14, 19, 32);
 }
 
 
-/* topbar starts here */
+              /*----------- topbar starts here --------------- */
+
 a{
     text-decoration: none;
     text-decoration-color: none;
@@ -29,15 +30,15 @@ nav.topbar{
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
+.topbar a{
+    display: flex;
+}
 .topbar h1{
     font-size: 15px;
     font-weight: 100;
     cursor: pointer;
 }
 
-/* .topbar h1{
-
-} */
 .top1{
     display: flex;
     margin-left: 2vw;
