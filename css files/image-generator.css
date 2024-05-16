@@ -66,15 +66,12 @@ nav.topbar{
 .item2 { grid-area: pic2; }
 .item3 { grid-area: pic3; }
 .item4 { grid-area: pic4; }
-.item5 { grid-area: pic-main; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'pic1 pic1 pic3 pic3 pic-main pic-main'
-    'pic1 pic1 pic3 pic3 pic-main pic-main'
-    'pic2 pic2 pic4 pic4 pic-main pic-main'
-    'pic2 pic2 pic4 pic4 pic-main pic-main';
+    'pic1 pic1 pic3 pic3 '
+    'pic2 pic2 pic4 pic4 ';
 
   gap: 10px;
   padding: 10px;
@@ -115,6 +112,7 @@ nav.topbar{
     border-radius: 10px;
     padding: 5px;
     height: 6vh;
+    border: 1px solid #fff;
 }
 .generate-btn{
     width: 20%;
@@ -131,32 +129,38 @@ nav.topbar{
 }
 .right-pane{
     display:block;
-    width: 40%;
+    width: 30vw;
     height: 70vh;
+    margin-left: 20vw;
+    color: #ffff;
 }
 .introduction{
     display: block;
     justify-content: center;
     text-align: center;
     padding: 10px;
+    color: #fff;
 }
 .introduction .visit-ai{
+    margin-left: 43vw;
     width: 10vw;
     height: 4vh;
-    border:0.5px solid grey;
+    border:0.5px solid rgb(252, 249, 249);
     text-align: center;
-    color: rgb(68, 63, 63);
+    color: #e7e4e4ec;
+    border-radius: 5px;
 }
 .introduction .visit-ai:hover{
     color: #58b908;
-    border: #58b908;
+    border:0.5px solid #58b908;
     cursor: pointer;
 }
 .contain{
-    height: 15vh;
-    width: 20vw;
-    border:1px solid #4a4949;
+    height: 12vh;
+    width: 25vw;
+    border:1px solid #ede7e7;
     border-radius: 5px;
     justify-content: center;
     padding: 10px;
+    margin: 10px;
 }
