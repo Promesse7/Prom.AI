@@ -1,0 +1,24 @@
+.item1 { grid-area: pic1; }
+.item2 { grid-area: pic2; }
+.item3 { grid-area: pic3; }
+.item4 { grid-area: pic4; }
+.item5 { grid-area: pic-main; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'pic1 pic1 pic3 pic3 pic-main pic-main'
+    'pic1 pic1 pic3 pic3 pic-main pic-main'
+    'pic2 pic2 pic4 pic4 pic-main pic-main'
+    'pic2 pic2 pic4 pic4 pic-main pic-main';
+
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
