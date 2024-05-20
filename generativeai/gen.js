@@ -18,11 +18,11 @@ const handleUserInput = () => {
       "what is the meaning of promai": "PromAi is an AI assistant that goes beyond simply answering questions and proactively suggests relevant actions or information based on user behavior and context",
       "what is promai": "PromAi is an AI assistant that goes beyond simply answering questions and proactively suggests relevant actions or information based on user behavior and context",
       "hello": "Hi there! How can I help you today?",
-      "Who are you": "I'm PromAi, your direct access to PromTech. I'm trained on large amounts of publicly available data and I can communicate and generate human-like text in response to a wide range of questions. Just try me out and see what I can do for you.",
+      "who are you": "I'm PromAi, your direct access to PromTech. I'm trained on large amounts of publicly available data and I can communicate and generate human-like text in response to a wide range of questions. Just try me out and see what I can do for you.",
       "who made you": "I was created by a team of engineers and researchers at PromTech Headquartes.  While Promesse RUKUNDO, PromTech's founder, played a role in the development of PromAi LLMs, it was a collaborative effort!",
       "who created you": "I was created by a team of engineers and researchers at PromTech Headquartes.  While Promesse RUKUNDO, PromTech's founder, played a role in the development of PromAi LLMs, it was a collaborative effort!",
       "create a short story": "Bubbles the goldfish was on a mission. Zipping back and forth in his bowl, he imagined himself a sleek race car zipping around a racetrack. He dodged the plastic castle (which he pretended was a tricky tunnel) and swerved past the colorful pebbles (dangerous, hidden landmines!). Feeling like a champion, Bubbles took a celebratory victory lap. But disaster struck! His tiny fin clipped the edge of a plastic plant (a sneaky speed bump!), sending him tumbling head over tail. With a surprised plop, Bubbles landed smack in the middle of his dinner, fish flakes raining down around him. He looked around, a little dazed, then sheepishly nibbled on a flake stuck to his head. Maybe being a race car driver wasn't quite as glamorous as he thought.",
-      "How do you work": "Imagine a giant filing cabinet stuffed with all sorts of information, like text from books, articles, and websites. That's kind of like how I work! I've been trained on massive amounts of this information, and I can sift through it super quickly to find what you're looking for. When you ask me a question, I search the filing cabinet for the best answer, using connections between different pieces of information to make sense of it all. <br> I'm still under development, but I'm getting better at understanding your questions and giving you helpful answers.",
+      "how do you work": "Imagine a giant filing cabinet stuffed with all sorts of information, like text from books, articles, and websites. That's kind of like how I work! I've been trained on massive amounts of this information, and I can sift through it super quickly to find what you're looking for. When you ask me a question, I search the filing cabinet for the best answer, using connections between different pieces of information to make sense of it all. <br> I'm still under development, but I'm getting better at understanding your questions and giving you helpful answers.",
       "can you be creative": "I can be creative in some ways! I can't exactly write a novel or paint a masterpiece, but I can use my knowledge and abilities to generate new and interesting things.",
       "What's up": "Hi there! How can I help you today?",
       "hello": "Hi there! How can I help you today?",
@@ -33,11 +33,11 @@ const handleUserInput = () => {
       "hey": "Hey!   What can I do for you today?  Is there anything you'd like to ask me or have me do?",
       "how are you": "I'm doing well, thank you! What can I assist you with?",
       "hi": "I'm doing well, thank you! What can I assist you with?",
-      "Who is Diama": "He is a brilliant study partner who challenges me, explains concepts clearly, and keeps my sessions focused and positive.",
+      "who is diama": "He is a brilliant study partner who challenges me, explains concepts clearly, and keeps my sessions focused and positive.",
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
-      "Ready to go": "You bet!  Is there anything specific you'd like my help with today, or are you just exploring the possibilities?  I'm happy to answer your questions, generate creative text formats, or brainstorm some ideas.  Just let me know!",
-      "What's up": "Hey! Not much, just hanging out in the digital world, waiting to see how I can be helpful today. What about you?  What's going on?",
+      "ready to go": "You bet!  Is there anything specific you'd like my help with today, or are you just exploring the possibilities?  I'm happy to answer your questions, generate creative text formats, or brainstorm some ideas.  Just let me know!",
+      "what's up": "Hey! Not much, just hanging out in the digital world, waiting to see how I can be helpful today. What about you?  What's going on?",
     };
 
     return responses[userInput] || "I'm sorry, I don't understand that question.";
