@@ -40,7 +40,7 @@ const handleUserInput = () => {
       "what's up": "Hey! Not much, just hanging out in the digital world, waiting to see how I can be helpful today. What about you?  What's going on?",
     };
 
-    return responses[userInput] || "I'm sorry, I don't understand that question.";
+    return responses[userInput] || "I apologize for any inconvenience caused by my limitations. I'm still under development, but I'm always learning and getting better!" <br> "Thanks for your patience! I understand my response might not have been perfect. I'm constantly learning and improving, so your feedback is valuable.";
   };
 
   function typeResponseWithEffect(responseText, targetElementId, className = "bot-message") {
