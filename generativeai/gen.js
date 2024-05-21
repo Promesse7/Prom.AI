@@ -38,9 +38,10 @@ const handleUserInput = () => {
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
       "ready to go": "You bet!  Is there anything specific you'd like my help with today, or are you just exploring the possibilities?  I'm happy to answer your questions, generate creative text formats, or brainstorm some ideas.  Just let me know!",
       "what's up": "Hey! Not much, just hanging out in the digital world, waiting to see how I can be helpful today. What about you?  What's going on?",
+      "thank you": "You're welcome! I'm glad I could help. If you have any other questions about anything else, feel free to ask."
     };
 
-    return responses[userInput] || "I apologize for any inconvenience caused by my limitations. I'm still under development, but I'm always learning and getting better! \n Thanks for your patience! I understand my response might not have been perfect. I'm constantly learning and improving, so your feedback is valuable.";
+    return responses[userInput] || "I apologize for any inconvenience caused by my limitations. I'm still under development, but I'm always learning and getting better!" + "\n" + " Thanks for your patience! I understand my response might not have been perfect. I'm constantly learning and improving, so your feedback is valuable.";
   };
 
   function typeResponseWithEffect(responseText, targetElementId, className = "bot-message") {
