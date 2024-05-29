@@ -28,7 +28,6 @@ const handleUserInput = () => {
       "hello": "Hi there! How can I help you today?",
       "hello": "Hi there! How can I help you today?",
       "hello": "Hi there! How can I help you today?",
-      "hello": "Hi there! How can I help you today?",
       "how are you?": "As an AI, I don't have feelings or emotions like humans do, but I'm here and ready to assist you with any questions or tasks you have. How can I help you today?",
       "hey": "Hey!   What can I do for you today?  Is there anything you'd like to ask me or have me do?",
       "how are you": "I'm doing well, thank you! What can I assist you with?",
@@ -38,7 +37,9 @@ const handleUserInput = () => {
       "how are you?": "I'm doing well, thank you! What can I assist you with?",
       "ready to go": "You bet!  Is there anything specific you'd like my help with today, or are you just exploring the possibilities?  I'm happy to answer your questions, generate creative text formats, or brainstorm some ideas.  Just let me know!",
       "what's up": "Hey! Not much, just hanging out in the digital world, waiting to see how I can be helpful today. What about you?  What's going on?",
-      "thank you": "You're welcome! I'm glad I could help. If you have any other questions about anything else, feel free to ask."
+      "what is ecole des sciences Byimana": "Ecole des Sciences Byimana: This is a science school located in Rwanda, founded in 1952. It offers a holistic education with a focus on science and moral values. You can find more information on their website ESC BYIMANA | Conscience - Science - Excellence  or even see a documentary about the school on YouTube.",
+      "what is esc byimana": "Ecole des Sciences Byimana: This is a science school located in Rwanda, founded in 1952. It offers a holistic education with a focus on science and moral values. You can find more information on their website ESC BYIMANA | Conscience - Science - Excellence  or even see a documentary about the school on YouTube.",
+       "thank you": "You're welcome! I'm glad I could help. If you have any other questions about anything else, feel free to ask."
     };
 
     return responses[userInput] || "I apologize for any inconvenience caused by my limitations. I'm still under development, but I'm always learning and getting better!" + "\n" + " Thanks for your patience! I understand my response might not have been perfect. I'm constantly learning and improving, so your feedback is valuable.";
