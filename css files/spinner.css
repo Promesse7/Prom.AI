@@ -15,39 +15,64 @@
     opacity: 0;
     visibility: hidden;
 }
-
-.loader::after {
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #ece7e7;
-    border-top-color: #eebf27;
-    border-radius: 50%;
-    animation: loading 2.1s ease infinite;
-}
-
-@keyframes loading {
-    from {
-        transform: rotate(0turn);
-    }
+.svg-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+  }
+  
+  .svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+  }
+  
+  .svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+  }
+  
+  .svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+  }
+  
+  #out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+  }
+  
+  #inner3,
+  #inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  #center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+  }
+  
+  @keyframes rotate16 {
     to {
-        transform: rotate(3turn);
+      transform: rotate(360deg);
     }
-}
-
-/* Media Queries for Responsive Loader Size Adjustments */
-@media (max-width: 768px) {
-    .loader::after {
-        width: 50px; /* smaller spinner for tablets */
-        height: 50px;
-        border-width: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .loader::after {
-        width: 30px; /* even smaller spinner for mobile phones */
-        height: 30px;
-        border-width: 8px;
-    }
-}
+  }
